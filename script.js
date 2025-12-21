@@ -142,48 +142,100 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const contactForm = document.getElementById('contactForm');
-    const successModal = document.getElementById('successModal');
-    const closeSuccessBtn = document.getElementById('closeSuccess');
 
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.textContent;
+            
+            // Change button text to "Sending..."
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
 
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const message = document.getElementById('message').value;
 
-            // Format message for WhatsApp
-            const whatsappMessage = `Hello, I'm interested in your product%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
-            
-            // Create WhatsApp link
-            const whatsappLink = `https://wa.me/+447534116006?text=${whatsappMessage}`;
-            
-            // Open WhatsApp in new tab
-            window.open(whatsappLink, '_blank');
-
-            contactForm.reset();
-
-            if (successModal) {
-                successModal.classList.add('active');
+            // Basic validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields: Name, Email, and Message.');
+                submitButton.textContent = originalButtonText;
+                submitButton.disabled = false;
+                return;
             }
-        });
-    }
 
-    if (closeSuccessBtn) {
-        closeSuccessBtn.addEventListener('click', () => {
-            successModal.classList.remove('active');
-        });
-    }
-
-    if (successModal) {
-        successModal.addEventListener('click', (e) => {
-            if (e.target === successModal) {
-                successModal.classList.remove('active');
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                submitButton.textContent = originalButtonText;
+                submitButton.disabled = false;
+                return;
             }
+
+            // Format message body
+            const subject = 'Contact Form Inquiry - Oringo Distributions';
+            const body = `
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}
+
+---
+Sent from Oringo Distributions Website
+            `.trim();
+
+            // Encode for URL
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(body);
+            
+            // Create mailto link
+            const mailtoLink = `mailto:info@oringodistributions.uk?subject=${encodedSubject}&body=${encodedBody}`;
+            
+            // Try multiple approaches to ensure the email client opens
+            
+            // Approach 1: Direct window.location
+            setTimeout(() => {
+                window.location.href = mailtoLink;
+            }, 100);
+            
+            // Approach 2: Create and click a link (for better compatibility)
+            const tempLink = document.createElement('a');
+            tempLink.href = mailtoLink;
+            tempLink.style.display = 'none';
+            tempLink.target = '_self';
+            document.body.appendChild(tempLink);
+            
+            // Trigger click
+            setTimeout(() => {
+                tempLink.click();
+            }, 50);
+            
+            // Clean up
+            setTimeout(() => {
+                if (tempLink.parentNode) {
+                    document.body.removeChild(tempLink);
+                }
+            }, 1000);
+
+            // Show success message and reset form
+            setTimeout(() => {
+                // Reset form
+                contactForm.reset();
+                
+                // Reset button
+                submitButton.textContent = originalButtonText;
+                submitButton.disabled = false;
+                
+            }, 1500);
         });
     }
+
 
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
