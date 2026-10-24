@@ -5,6 +5,27 @@ var NUMBER="447534116006",DATA="catalogue/stock-confirmed-2026-10-24.json";
 var cats=["Hot Drinks & Milk Powders","Grains, Cereals & Food Staples","Spices & Seasonings","Traditional Cooking Ingredients","Non-Alcoholic Beverages","Personal Care & Toiletries","Kitchenware & Utensils","Candy"];
 var aliases={beverages:cats[0],grains:cats[1],spices:cats[2],oils:cats[3],dried:cats[3],bodycare:cats[5],drinks:cats[4],accessories:cats[6]};
 var state={products:[],search:"",category:"All",sort:"name",basket:new Map(),buyer:"Retail"};
+var STORE_KEY="oringo-draft-enquiry-v1";
+function saveEnquiry(){
+ try{sessionStorage.setItem(STORE_KEY,JSON.stringify([...state.basket]));}catch(error){}
+}
+function restoreEnquiry(){
+ try{
+  var raw=JSON.parse(sessionStorage.getItem(STORE_KEY)||"[]");
+  if(!Array.isArray(raw))return;
+  raw.forEach(function(entry){
+   if(!Array.isArray(entry)||entry.length!==2)return;
+   var sku=String(entry[0]),qty=Number(entry[1]);
+   if(state.products.some(function(p){return p.sku===sku})&&Number.isInteger(qty)&&qty>0&&qty<=100)state.basket.set(sku,qty);
+  });
+ }catch(error){}
+}
+var categoryIcons={
+ "Hot Drinks & Milk Powders":"fa-mug-hot","Grains, Cereals & Food Staples":"fa-wheat-awn",
+ "Spices & Seasonings":"fa-pepper-hot","Traditional Cooking Ingredients":"fa-seedling",
+ "Non-Alcoholic Beverages":"fa-glass-water","Personal Care & Toiletries":"fa-pump-soap",
+ "Kitchenware & Utensils":"fa-utensils","Candy":"fa-candy-cane"
+};
 var el=function(id){return document.getElementById(id)};
 var enc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
 var clean=function(s){return String(s)
@@ -25,11 +46,11 @@ function renderCards(){
   article.className="oc-product";
   var photo=(p.photo_approved&&p.image_url&&p.photo_status==="APPROVED")?
     '<img loading="lazy" alt="'+name+'" src="'+enc(p.image_url)+'">':
-    '<div class="oc-image-pending"><i class="fas fa-camera" aria-hidden="true"></i><span>Product photo being prepared</span></div>';
-  var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address.";
+    '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><span>'+enc(p.category)+'</span><small>Photo pending approval</small></div>';
+  var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address."+ (p.variant_split_required?" Please confirm the pack/flavour option.":"");
   article.innerHTML='<div class="oc-product-image">'+photo+'</div><div class="oc-card-body">'+
     '<small class="oc-category">'+enc(p.category)+'</small><h3>'+name+'</h3>'+
-    '<p class="oc-stock"><i class="fas fa-check-circle"></i> In stock</p><p class="oc-price">Price on request</p>'+
+    '<p class="oc-stock"><i class="fas fa-check-circle"></i> In stock</p><p class="oc-price">Price on request</p>'+(p.variant_split_required?'<p class="oc-variant-warning">Choose pack or flavour with our team</p>':"")+
     '<div class="oc-product-actions"><button type="button" class="oc-add" data-action="add" data-sku="'+sku+'">Add to enquiry</button>'+
     '<a class="oc-ask" target="_blank" rel="noopener noreferrer" href="'+wa(msg)+'">Ask on WhatsApp</a></div></div>';
   frag.appendChild(article);
@@ -55,6 +76,8 @@ function updateBasket(){
  var selected=[...state.basket].map(function(entry){return {p:state.products.find(function(p){return p.sku===entry[0]}),qty:entry[1]}}).filter(function(x){return !!x.p});
  var count=selected.reduce(function(n,x){return n+x.qty},0);
  el("shop-cart-count").textContent=String(count);
+ el("shop-mobile-count").textContent=String(count);
+ el("shop-mobile-basket").hidden=count===0;
  selected.forEach(function(x){
   var li=document.createElement("li");li.className="oc-basket-line";
   li.innerHTML='<span>'+enc(clean(x.p.name))+'<small>'+enc(x.p.sku)+'</small></span><div class="oc-qty">'+
@@ -71,13 +94,14 @@ function qty(sku,change){
  if(!p)return;
  var n=Math.max(0,Math.min(100,(state.basket.get(sku)||0)+change));
  if(n===0)state.basket.delete(sku);else state.basket.set(sku,n);
+ saveEnquiry();
  updateBasket();
 }
 function send(){
  var selected=[...state.basket].map(function(entry){return {p:state.products.find(function(p){return p.sku===entry[0]}),qty:entry[1]}}).filter(function(x){return !!x.p});
  if(!selected.length)return;
  var msg="Hello Oringo Distributions. I am enquiring as a "+state.buyer.toLowerCase()+" customer about these in-stock products:\n\n"+
-  selected.map(function(x,i){return(i+1)+". "+clean(x.p.name)+" ("+x.p.sku+") — quantity "+x.qty}).join("\n")+
+  selected.map(function(x,i){return(i+1)+". "+clean(x.p.name)+" ("+x.p.sku+") — quantity "+x.qty+(x.p.variant_split_required?" (Please confirm the pack/flavour option.)":"")}).join("\n")+
   "\n\nPlease confirm exact pack sizes, total price and delivery cost/time for my location. Thank you.";
  window.open(wa(msg),"_blank","noopener,noreferrer");
 }
@@ -91,8 +115,13 @@ function init(){
  el("shop-products").addEventListener("click",function(e){var b=e.target.closest("[data-action='add']");if(b)qty(b.dataset.sku,1)});
  el("shop-basket-items").addEventListener("click",function(e){var b=e.target.closest("[data-action]");if(b)qty(b.dataset.sku,b.dataset.action==="plus"?1:-1)});
  el("shop-basket-send").addEventListener("click",send);
+ el("shop-mobile-basket").addEventListener("click",function(){
+  el("shop-enquiry-panel").scrollIntoView({behavior:"smooth",block:"start"});
+  el("shop-enquiry-panel").focus({preventScroll:true});
+ });
  fetch(DATA).then(function(r){if(!r.ok)throw new Error("Could not load catalogue");return r.json()}).then(function(d){
-  state.products=d.products||[];
+  state.products=(d.products||[]).filter(function(p){return p.category!=="Adult Beverages"&&!/\bRobb\b/i.test(p.name)});
+  restoreEnquiry();
   var hash=decodeURIComponent(location.hash.slice(1));
   if(aliases[hash])state.category=aliases[hash];
   renderChips();renderCards();
