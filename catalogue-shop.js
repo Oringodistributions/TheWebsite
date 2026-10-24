@@ -2,9 +2,9 @@
 (function () {
 "use strict";
 var NUMBER="447534116006",DATA="catalogue/stock-confirmed-2026-10-24.json";
-var cats=["Hot Drinks & Milk Powders","Grains, Cereals & Food Staples","Spices & Seasonings","Traditional Cooking Ingredients","Non-Alcoholic Beverages","Personal Care & Toiletries","Kitchenware & Utensils","Candy","Adult Beverages"];
-var aliases={beverages:cats[0],grains:cats[1],spices:cats[2],oils:cats[3],dried:cats[3],bodycare:cats[5],drinks:cats[4],accessories:cats[6],alcoholic:cats[8]};
-var state={products:[],search:"",category:"All",sort:"name",basket:new Map(),adultEnabled:false,buyer:"Retail"};
+var cats=["Hot Drinks & Milk Powders","Grains, Cereals & Food Staples","Spices & Seasonings","Traditional Cooking Ingredients","Non-Alcoholic Beverages","Personal Care & Toiletries","Kitchenware & Utensils","Candy"];
+var aliases={beverages:cats[0],grains:cats[1],spices:cats[2],oils:cats[3],dried:cats[3],bodycare:cats[5],drinks:cats[4],accessories:cats[6]};
+var state={products:[],search:"",category:"All",sort:"name",basket:new Map(),buyer:"Retail"};
 var el=function(id){return document.getElementById(id)};
 var enc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
 var clean=function(s){return String(s)
@@ -14,13 +14,11 @@ var clean=function(s){return String(s)
  .replace(/\s+—\s+.*example\s+\(.*?\)$/i,"")
  .trim()};
 var wa=function(message){return "https://wa.me/"+NUMBER+"?text="+encodeURIComponent(message)};
-var allowed=function(p){return p.category!=="Adult Beverages"||state.adultEnabled};
 var matches=function(p){return(state.category==="All"||p.category===state.category)&&[p.name,p.sku,p.category].join(" ").toLowerCase().includes(state.search)};
 function renderCards(){
- var filtered=state.products.filter(matches),blocked=filtered.some(function(p){return !allowed(p)});
- var list=filtered.filter(allowed);
+ var list=state.products.filter(matches);
  list.sort(function(a,b){return state.sort==="category"?(a.category.localeCompare(b.category)||clean(a.name).localeCompare(clean(b.name))):clean(a.name).localeCompare(clean(b.name))});
- el("shop-results").textContent=list.length+" products shown · "+state.products.length+" in stock"+(blocked?" · Confirm age to view adult drinks":"");
+ el("shop-results").textContent=list.length+" products shown · "+state.products.length+" in stock";
  var frag=document.createDocumentFragment();
  list.forEach(function(p){
   var article=document.createElement("article"),name=enc(clean(p.name)),sku=enc(p.sku);
@@ -37,8 +35,7 @@ function renderCards(){
   frag.appendChild(article);
  });
  el("shop-products").replaceChildren(frag);
- el("shop-empty").hidden=list.length!==0||blocked;
- el("shop-age-hint").hidden=!blocked;
+ el("shop-empty").hidden=list.length!==0;
  updateBasket();
 }
 function renderChips(){
@@ -71,13 +68,13 @@ function updateBasket(){
 }
 function qty(sku,change){
  var p=state.products.find(function(x){return x.sku===sku});
- if(!p||!allowed(p))return;
+ if(!p)return;
  var n=Math.max(0,Math.min(100,(state.basket.get(sku)||0)+change));
  if(n===0)state.basket.delete(sku);else state.basket.set(sku,n);
  updateBasket();
 }
 function send(){
- var selected=[...state.basket].map(function(entry){return {p:state.products.find(function(p){return p.sku===entry[0]}),qty:entry[1]}}).filter(function(x){return x.p&&allowed(x.p)});
+ var selected=[...state.basket].map(function(entry){return {p:state.products.find(function(p){return p.sku===entry[0]}),qty:entry[1]}}).filter(function(x){return !!x.p});
  if(!selected.length)return;
  var msg="Hello Oringo Distributions. I am enquiring as a "+state.buyer.toLowerCase()+" customer about these in-stock products:\n\n"+
   selected.map(function(x,i){return(i+1)+". "+clean(x.p.name)+" ("+x.p.sku+") — quantity "+x.qty}).join("\n")+
@@ -94,8 +91,6 @@ function init(){
  el("shop-products").addEventListener("click",function(e){var b=e.target.closest("[data-action='add']");if(b)qty(b.dataset.sku,1)});
  el("shop-basket-items").addEventListener("click",function(e){var b=e.target.closest("[data-action]");if(b)qty(b.dataset.sku,b.dataset.action==="plus"?1:-1)});
  el("shop-basket-send").addEventListener("click",send);
- el("shop-age-hint").addEventListener("click",function(){if(el("showAlcoholic"))el("showAlcoholic").click()});
- if(el("ageYes"))el("ageYes").addEventListener("click",function(){state.adultEnabled=true;renderCards()});
  fetch(DATA).then(function(r){if(!r.ok)throw new Error("Could not load catalogue");return r.json()}).then(function(d){
   state.products=d.products||[];
   var hash=decodeURIComponent(location.hash.slice(1));
