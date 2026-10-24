@@ -100,47 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
 
-    const showAlcoholicBtn = document.getElementById('showAlcoholic');
-    const ageModal = document.getElementById('ageModal');
-    const ageYesBtn = document.getElementById('ageYes');
-    const ageNoBtn = document.getElementById('ageNo');
-    const alcoholicSection = document.getElementById('alcoholic-drinks');
-    const ageGate = document.getElementById('age-gate');
-
-    if (showAlcoholicBtn) {
-        showAlcoholicBtn.addEventListener('click', () => {
-            ageModal.classList.add('active');
-        });
-    }
-
-    if (ageYesBtn) {
-        ageYesBtn.addEventListener('click', () => {
-            ageModal.classList.remove('active');
-            if (ageGate) ageGate.style.display = 'none';
-            if (alcoholicSection) alcoholicSection.style.display = 'block';
-            const alcoholicBanner = document.getElementById('alcoholic-banner');
-            if (alcoholicBanner) alcoholicBanner.style.display = 'block';
-
-            setTimeout(() => {
-                alcoholicSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 100);
-        });
-    }
-
-    if (ageNoBtn) {
-        ageNoBtn.addEventListener('click', () => {
-            ageModal.classList.remove('active');
-        });
-    }
-
-    if (ageModal) {
-        ageModal.addEventListener('click', (e) => {
-            if (e.target === ageModal) {
-                ageModal.classList.remove('active');
-            }
-        });
-    }
-
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
