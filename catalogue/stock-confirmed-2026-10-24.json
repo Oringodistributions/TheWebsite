@@ -1,20 +1,21 @@
 {
   "company": "Oringo Distributions",
-  "purpose": "Website product catalogue draft: 65 stocked listings available for publication only after images/rights/variant approval; six regulated items held separately",
+  "purpose": "67 in-stock variants for internal website review, with six regulated items held separately; never publish a variant without an approved matching photograph and valid image rights.",
   "confirmed_at": "2026-10-24",
   "stock_source": "Client confirmed all entries stocked in chat",
   "whatsapp_order_international": "+447534116006",
   "public_price_policy": "Negotiated via WhatsApp",
   "publication_rule": "Publish individual product only after exact package, image rights, visual quality, variant separation and owner approval. Image reference is not approval.",
   "statistics": {
-    "count": 65,
+    "count": 67,
     "photo_status_counts": {
-      "THIRD_PARTY_REFERENCE_ONLY": 38,
+      "THIRD_PARTY_REFERENCE_ONLY": 39,
       "ORINGO_SHELF_CROP_REQUIRES_CUTOUT": 8,
-      "NEEDS_PRODUCT_PHOTO": 19
+      "NEEDS_PRODUCT_PHOTO": 20
     },
     "composite_cards_to_split": 6,
-    "deferred_regulated": 6
+    "deferred_regulated": 6,
+    "split_variants_added": 2
   },
   "products": [
     {
@@ -326,6 +327,30 @@
       "photo_approved": false,
       "publish_approved": false,
       "variant_split_required": false
+    },
+    {
+      "sku": "ORI-072",
+      "name": "Nestlé Milo Pouch — 400g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "packaging_confirmed": false,
+      "source_note": "Listed by client as a separate Milo 400g pouch variant; manufacturer shows a 400g soft pack. Image reuse permission still needed."
+    },
+    {
+      "sku": "ORI-073",
+      "name": "Nestlé Milo Tin — 800g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "packaging_confirmed": false,
+      "source_note": "Client listed Milo 800g tin as separate stock. Obtain a front-facing photo of this exact tin before publication."
     },
     {
       "sku": "ORI-032",
@@ -668,5 +693,6 @@
       "variant_split_required": false
     }
   ],
-  "exclusion_policy": "Five adult alcoholic drinks and Robb Original Ointment excluded until licensing, age verification and relevant medicine clearance confirmed"
+  "exclusion_policy": "Five adult alcoholic drinks and Robb Original Ointment excluded until licensing, age verification and relevant medicine clearance confirmed",
+  "variant_note": "Milo 400g and 800g each split into Tin and Pouch per client product specification. These two newly added variants require individual visual verification."
 }
