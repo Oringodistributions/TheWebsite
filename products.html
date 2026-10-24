@@ -46,7 +46,7 @@
         <span><i class="fas fa-truck"></i> UK & Europe delivery quotes</span>
       </div>
     </div>
-    <div class="oc-hero-stat" aria-label="71 stocked catalogue entries"><strong>65</strong><span>catalogue entries confirmed in stock</span></div>
+    <div class="oc-hero-stat" aria-label="65 stocked catalogue entries"><strong>65</strong><span>catalogue entries confirmed in stock</span></div>
   </div>
 </section>
 <main class="oc-shell" id="shop-browse">
@@ -76,8 +76,8 @@
       <div>
         <div id="shop-products" class="oc-grid" aria-label="Product catalogue"></div>
         <div class="oc-empty" id="shop-empty" hidden>No matching products in this category. <a href="https://wa.me/447534116006?text=Hello%20Oringo%2C%20I%27m%20looking%20for%20another%20product" target="_blank" rel="noopener noreferrer">Ask our team</a>.</div>
-</div>
-      <aside class="oc-panel oc-basket" aria-label="WhatsApp enquiry basket">
+      </div>
+      <aside id="shop-enquiry-panel" tabindex="-1" class="oc-panel oc-basket" aria-label="WhatsApp enquiry basket">
         <h2>Your enquiry <span id="shop-cart-count" class="oc-counter">0</span></h2>
         <p class="oc-small">Not a paid order. Add several items to request a single quote, then discuss payment and delivery privately with Oringo.</p>
         <p class="oc-small" id="shop-cart-empty">Your enquiry list is empty.</p>
@@ -86,6 +86,7 @@
         <p class="oc-small">Please don't include card details in WhatsApp enquiries.</p>
       </aside>
     </div>
+    <button type="button" class="oc-mobile-basket" id="shop-mobile-basket" aria-controls="shop-enquiry-panel" hidden><i class="fas fa-bag-shopping" aria-hidden="true"></i> View enquiry (<span id="shop-mobile-count">0</span>) <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
     <section class="oc-notegrid" aria-label="Shop with Oringo">
       <article><h3><i class="fas fa-shipping-fast" aria-hidden="true"></i> UK and Europe delivery</h3><p>Contact us with your destination for confirmed service availability, fees and timing. We don't advertise unverified free-shipping thresholds or delivery dates.</p></article>
       <article><h3><i class="fas fa-box" aria-hidden="true"></i> Need a bulk order?</h3><p>Switch the buyer selector to Wholesale. Your WhatsApp enquiry will identify the order type and requested quantities.</p></article>
