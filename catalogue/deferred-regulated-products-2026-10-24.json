@@ -1,0 +1,81 @@
+{
+  "company": "Oringo Distributions",
+  "policy": "Temporarily excluded from all public web catalogues, online enquiries and product offers pending legal review. Not removed from stock holdings.",
+  "hold_reason": "Alcohol licence/age-verification compliance or medicine regulatory clearance",
+  "last_reviewed": "2026-10-24",
+  "count": 6,
+  "products": [
+    {
+      "sku": "ORI-041",
+      "name": "Robb Original Ointment — Oringo photo (size pending)",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "publication_status": "DEFERRED_DO_NOT_LIST",
+      "requires_legal_approval": true
+    },
+    {
+      "sku": "ORI-067",
+      "name": "Guinness Stout",
+      "category": "Adult Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "publication_status": "DEFERRED_DO_NOT_LIST",
+      "requires_legal_approval": true
+    },
+    {
+      "sku": "ORI-068",
+      "name": "Trophy",
+      "category": "Adult Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "publication_status": "DEFERRED_DO_NOT_LIST",
+      "requires_legal_approval": true
+    },
+    {
+      "sku": "ORI-069",
+      "name": "Star",
+      "category": "Adult Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "publication_status": "DEFERRED_DO_NOT_LIST",
+      "requires_legal_approval": true
+    },
+    {
+      "sku": "ORI-070",
+      "name": "Hero",
+      "category": "Adult Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "publication_status": "DEFERRED_DO_NOT_LIST",
+      "requires_legal_approval": true
+    },
+    {
+      "sku": "ORI-071",
+      "name": "Palm Wine",
+      "category": "Adult Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "publication_status": "DEFERRED_DO_NOT_LIST",
+      "requires_legal_approval": true
+    }
+  ]
+}
