@@ -10,12 +10,15 @@
     "count": 67,
     "photo_status_counts": {
       "THIRD_PARTY_REFERENCE_ONLY": 39,
-      "ORINGO_SHELF_CROP_REQUIRES_CUTOUT": 8,
-      "NEEDS_PRODUCT_PHOTO": 20
+      "OWN_PHOTO_REVIEW": 7,
+      "NEEDS_PRODUCT_PHOTO": 20,
+      "ORINGO_SHELF_CROP_REQUIRES_CUTOUT": 1
     },
     "composite_cards_to_split": 6,
     "deferred_regulated": 6,
-    "split_variants_added": 2
+    "split_variants_added": 2,
+    "original_photo_review_assets": 7,
+    "milo_pack_photo_approved": 0
   },
   "products": [
     {
@@ -103,10 +106,13 @@
       "name": "Golden Penny Semovita — 1kg",
       "category": "Grains, Cereals & Food Staples",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/golden-penny-semovita-1kg.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded photograph, 1kg pack; part of lower package reconstructed by earlier crop, further visual QA needed"
     },
     {
       "sku": "ORI-010",
@@ -437,30 +443,39 @@
       "name": "Tom Tom Strong Menthol Candy — Oringo photo",
       "category": "Candy",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/tom-tom-menthol.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded Tom Tom Strong Menthol packet; hand and nearby packets visible in source"
     },
     {
       "sku": "ORI-042",
       "name": "Aboniki Balm — 25g Oringo photo",
       "category": "Personal Care & Toiletries",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/aboniki-balm-25g.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded Aboniki 25g jar; original photo had overlapping jars"
     },
     {
       "sku": "ORI-043",
-      "name": "Ovaltine",
+      "name": "Ovaltine Malt Drink Tin — 1.2kg",
       "category": "Hot Drinks & Milk Powders",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/ovaltine-tin-1200g.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded Ovaltine 1.2kg tin; photographed size must be used"
     },
     {
       "sku": "ORI-044",
@@ -554,13 +569,16 @@
     },
     {
       "sku": "ORI-053",
-      "name": "Banga Oil",
+      "name": "Okomu Banga Red Palm Oil — 2L",
       "category": "Traditional Cooking Ingredients",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/okomu-banga-palm-oil-2l.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded Okomu Banga palm oil 2L bottle; lower carton previously obscured"
     },
     {
       "sku": "ORI-054",
@@ -607,20 +625,26 @@
       "name": "Fanta",
       "category": "Non-Alcoholic Beverages",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/fanta-orange-pet.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded Fanta Orange PET; exact size still unverified"
     },
     {
       "sku": "ORI-059",
       "name": "Coke",
       "category": "Non-Alcoholic Beverages",
       "stock": "IN_STOCK",
-      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_status": "OWN_PHOTO_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/coca-cola-pet.jpg",
+      "image_source": "ORINGO_UPLOAD",
+      "image_review_note": "Original user-uploaded Coca-Cola Original PET; exact size still unverified"
     },
     {
       "sku": "ORI-060",
@@ -694,5 +718,6 @@
     }
   ],
   "exclusion_policy": "Five adult alcoholic drinks and Robb Original Ointment excluded until licensing, age verification and relevant medicine clearance confirmed",
-  "variant_note": "Milo 400g and 800g each split into Tin and Pouch per client product specification. These two newly added variants require individual visual verification."
+  "variant_note": "Milo 400g and 800g each split into Tin and Pouch per client product specification. These two newly added variants require individual visual verification.",
+  "image_policy": "Seven user-uploaded product photos now render only in non-public review branch with visible review designation. No stock photo has been marked owner approved or publish ready."
 }
