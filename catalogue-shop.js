@@ -87,6 +87,8 @@ function send(){
 function init(){
  if(!el("shop-products"))return;
  el("shop-search").addEventListener("input",function(e){state.search=e.target.value.trim().toLowerCase();renderCards()});
+ el("shop-quick").addEventListener("click",function(e){var btn=e.target.closest("[data-term]");if(!btn)return;el("shop-search").value=btn.dataset.term;state.search=btn.dataset.term.toLowerCase();state.category="All";renderChips();renderCards();});
+
  el("shop-sort").addEventListener("change",function(e){state.sort=e.target.value;renderCards()});
  el("shop-buyer").addEventListener("change",function(e){state.buyer=e.target.value});
  el("shop-products").addEventListener("click",function(e){var b=e.target.closest("[data-action='add']");if(b)qty(b.dataset.sku,1)});
