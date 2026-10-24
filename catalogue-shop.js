@@ -37,7 +37,7 @@ function renderCards(){
   frag.appendChild(article);
  });
  el("shop-products").replaceChildren(frag);
- el("shop-empty").hidden=list.length!==0;
+ el("shop-empty").hidden=list.length!==0||blocked;
  el("shop-age-hint").hidden=!blocked;
  updateBasket();
 }
