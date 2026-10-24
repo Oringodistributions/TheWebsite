@@ -44,8 +44,10 @@ function renderCards(){
  list.forEach(function(p){
   var article=document.createElement("article"),name=enc(clean(p.name)),sku=enc(p.sku);
   article.className="oc-product";
-  var photo=(p.photo_approved&&p.image_url&&p.photo_status==="APPROVED")?
-    '<img loading="lazy" alt="'+name+'" src="'+enc(p.image_url)+'">':
+  var reviewPhoto=(p.image_source==="ORINGO_UPLOAD" && p.photo_status==="OWN_PHOTO_REVIEW" && p.image_url && p.image_url.indexOf("images/products/")===0 && p.image_url.endsWith(".jpg"));
+  var finalPhoto=(p.photo_approved && p.image_url && p.photo_status==="APPROVED");
+  var photo=(reviewPhoto||finalPhoto)?
+    '<div class="oc-original-photo"><img loading="lazy" alt="Original Oringo photograph of '+name+'" src="'+enc(p.image_url)+'">'+(reviewPhoto?'<span class="oc-photo-review">Original photo · Under review</span>':"")+'</div>':
     '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><span>'+enc(p.category)+'</span><small>Photo pending approval</small></div>';
   var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address."+ (p.variant_split_required?" Please confirm the pack/flavour option.":"");
   article.innerHTML='<div class="oc-product-image">'+photo+'</div><div class="oc-card-body">'+
