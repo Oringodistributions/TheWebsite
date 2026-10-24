@@ -92,3 +92,49 @@
   .oc-basket{scroll-margin-top:100px}
 }
 @media(prefers-reduced-motion:reduce){.oc-product,.oc-quick,.oc-mobile-basket{scroll-behavior:auto}}
+
+/* Compact browse-first layout and readable mobile/print exports */
+.oc-how{background:#fff;border:1px solid #d4e6d9;border-radius:12px;margin:0 0 1rem;overflow:hidden}
+.oc-how summary{cursor:pointer;padding:.85rem 1rem;display:flex;align-items:center;flex-wrap:wrap;column-gap:.6rem;font-size:.92rem;font-weight:700;color:#174a31;list-style:none}
+.oc-how summary::-webkit-details-marker{display:none}
+.oc-how summary i{color:#148249}
+.oc-how summary span{font-size:.78rem;font-weight:400;color:#62816d}
+.oc-how summary:after{content:"⌄";margin-left:auto;color:#47745b;font-size:1.2rem;line-height:1}
+.oc-how[open] summary:after{content:"⌃"}
+.oc-how-body{padding:.15rem 1rem 1rem;border-top:1px solid #edf3ef;font-size:.91rem;line-height:1.55;color:#486450}
+.oc-how-body p{margin:.6rem 0}
+@media(max-width:720px){
+ .oc-intro{padding:.72rem 0 1rem}
+ .oc-intro h1{font-size:1.62rem;line-height:1.16;margin:.38rem 0}
+ .oc-intro p{font-size:.84rem;line-height:1.42}
+ .oc-kicker{font-size:.65rem}
+ .oc-intro-actions{margin:.7rem 0 .3rem;gap:.5rem}
+ .oc-intro-actions a{font-size:.79rem;padding:.65rem .8rem}
+ .oc-points{display:none}
+ .oc-shell{padding-top:1rem}
+ .oc-how{margin-bottom:.65rem}
+ .oc-how summary{padding:.7rem .85rem;font-size:.84rem}
+ .oc-how summary span{font-size:.71rem}
+ .oc-controls{margin:.5rem 0 .6rem;gap:.55rem}
+ .oc-field label{font-size:.72rem}
+ .oc-field input,.oc-field select{padding:.67rem .75rem;min-height:43px}
+ .oc-quick{margin:.25rem 0 .35rem;gap:.35rem}
+ .oc-quick button{font-size:.75rem;padding:.35rem .55rem}
+ .oc-chip-row{padding:.2rem 0 .65rem}
+ .oc-result{margin:.15rem 0 .6rem}
+}
+@media print{
+ @page{size:A4;margin:12mm}
+ .navbar,.oc-mobile-basket,.scroll-to-top,.oc-quick,.oc-basket,.oc-intro-actions,.oc-category-chips{display:none!important}
+ .oc-intro{padding:.5rem 0;background:#fff!important;color:#000!important}
+ .oc-intro h1,.oc-intro p,.oc-kicker{color:#000!important}
+ .oc-points,.oc-hero-stat,.oc-notegrid,.oc-how{display:none!important}
+ .oc-controls{display:none!important}
+ .oc-layout{display:block!important}
+ .oc-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:6mm}
+ .oc-product{break-inside:avoid;page-break-inside:avoid}
+ .oc-product-image{height:45mm}
+ .oc-card-body h3{font-size:10pt}
+ .oc-shell{padding:0}
+ .oc-wrap{max-width:none}
+}
