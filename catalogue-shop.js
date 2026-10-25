@@ -1,4 +1,4 @@
-/* Oringo catalogue: source image approval is required before publication */
+/* Oringo catalogue: publish only owner-origin photos or separately approved images */
 (function () {
 "use strict";
 var NUMBER="447534116006",DATA="catalogue/stock-confirmed-2026-10-24.json";
@@ -45,13 +45,14 @@ function renderCards(){
   var article=document.createElement("article"),name=enc(clean(p.name)),sku=enc(p.sku);
   article.className="oc-product";
   article.dataset.sku=p.sku;
-  var reviewPhoto=((p.image_source==="ORINGO_UPLOAD"&&p.photo_status==="OWN_PHOTO_REVIEW") || (p.image_source==="CLIENT_SUPPLIED"&&p.photo_status==="CLIENT_IMAGE_REVIEW")) && p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url);
-  var finalPhoto=(p.photo_approved && p.image_url && p.photo_status==="APPROVED");
-  var photo=(reviewPhoto||finalPhoto)?
-    '<div class="oc-original-photo"><img loading="lazy" alt="Client supplied photo of '+name+'" src="'+enc(p.image_url)+'">'+
+  var ownerPhoto=p.image_source==="ORINGO_UPLOAD" && p.photo_status==="OWN_PHOTO_REVIEW";
+  var approvedPhoto=p.photo_approved===true && p.photo_status==="APPROVED";
+  var showPhoto=(ownerPhoto||approvedPhoto) && p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url);
+  var photo=showPhoto?
+    '<div class="oc-original-photo"><img loading="lazy" alt="Photo of '+name+'" src="'+enc(p.image_url)+'">'+
     '<button type="button" class="oc-zoom-trigger" data-zoom="'+sku+'" aria-label="Enlarge photograph of '+name+'"><i class="fas fa-expand" aria-hidden="true"></i></button>'+
-    (reviewPhoto?'<span class="oc-photo-review">Product image · Under review</span>':"")+'</div>':
-    '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><span>'+enc(p.category)+'</span><small>Photo pending approval</small></div>';
+    (ownerPhoto?'<span class="oc-photo-review">Please confirm pack details</span>':"")+'</div>':
+    '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><span>'+enc(p.category)+'</span><small>Ask us for a product photo</small></div>';
   var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address."+ (p.variant_split_required?" Please confirm the pack/flavour option.":"");
   article.innerHTML='<div class="oc-product-image">'+photo+'</div><div class="oc-card-body">'+
     '<small class="oc-category">'+enc(p.category)+'</small><h3>'+name+'</h3>'+
