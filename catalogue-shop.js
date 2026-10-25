@@ -45,12 +45,12 @@ function renderCards(){
   var article=document.createElement("article"),name=enc(clean(p.name)),sku=enc(p.sku);
   article.className="oc-product";
   article.dataset.sku=p.sku;
-  var reviewPhoto=(p.image_source==="ORINGO_UPLOAD" && p.photo_status==="OWN_PHOTO_REVIEW" && p.image_url && p.image_url.indexOf("images/products/")===0 && p.image_url.endsWith(".jpg"));
+  var reviewPhoto=((p.image_source==="ORINGO_UPLOAD"&&p.photo_status==="OWN_PHOTO_REVIEW") || (p.image_source==="CLIENT_SUPPLIED"&&p.photo_status==="CLIENT_IMAGE_REVIEW")) && p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url);
   var finalPhoto=(p.photo_approved && p.image_url && p.photo_status==="APPROVED");
   var photo=(reviewPhoto||finalPhoto)?
-    '<div class="oc-original-photo"><img loading="lazy" alt="Original Oringo photograph of '+name+'" src="'+enc(p.image_url)+'">'+
+    '<div class="oc-original-photo"><img loading="lazy" alt="Client supplied photo of '+name+'" src="'+enc(p.image_url)+'">'+
     '<button type="button" class="oc-zoom-trigger" data-zoom="'+sku+'" aria-label="Enlarge photograph of '+name+'"><i class="fas fa-expand" aria-hidden="true"></i></button>'+
-    (reviewPhoto?'<span class="oc-photo-review">Original photo · Under review</span>':"")+'</div>':
+    (reviewPhoto?'<span class="oc-photo-review">Product image · Under review</span>':"")+'</div>':
     '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><span>'+enc(p.category)+'</span><small>Photo pending approval</small></div>';
   var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address."+ (p.variant_split_required?" Please confirm the pack/flavour option.":"");
   article.innerHTML='<div class="oc-product-image">'+photo+'</div><div class="oc-card-body">'+
@@ -124,11 +124,11 @@ function init(){
    var card=e.target.closest(".oc-product");
    var sku=zoom?zoom.dataset.zoom:card&&card.dataset.sku;
    var p=state.products.find(function(x){return x.sku===sku});
-   if(p&&p.image_source==="ORINGO_UPLOAD"&&p.image_url&&p.image_url.indexOf("images/products/")===0){
+   if(p&&(p.image_source==="ORINGO_UPLOAD"||p.image_source==="CLIENT_SUPPLIED")&&p.image_url&&p.image_url.indexOf("images/products/")===0){
     var dialog=el("shop-photo-dialog");
     el("shop-photo-zoomed").src=p.image_url;
-    el("shop-photo-zoomed").alt="Enlarged original Oringo photo: "+clean(p.name);
-    el("shop-photo-caption").textContent=clean(p.name)+" — original photo under review";
+    el("shop-photo-zoomed").alt="Enlarged client product image: "+clean(p.name);
+    el("shop-photo-caption").textContent=clean(p.name)+" — supplied photo under review";
     if(typeof dialog.showModal==="function")dialog.showModal();
     else dialog.setAttribute("open","");
    }
