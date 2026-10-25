@@ -490,20 +490,32 @@
       "name": "Indomie Noodles",
       "category": "Grains, Cereals & Food Staples",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "indomie-chicken-70g.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Indomie Chicken Flavour 70g",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-045",
       "name": "Roasted Groundnut",
       "category": "Grains, Cereals & Food Staples",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "roasted-groundnut.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Roasted Groundnut, bottle packaging",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-046",
@@ -520,10 +532,17 @@
       "name": "Onga",
       "category": "Spices & Seasonings",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "onga-chicken-seasoning.jpg",
+        "onga-cubes.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Onga Chicken Seasoning and Onga Cube (two stocked packaging variants)",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-048",
@@ -550,20 +569,32 @@
       "name": "Spicity Stew & Jollof",
       "category": "Spices & Seasonings",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "spicity-stew-jollof-10g.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Spicity Stew & Jollof 10g",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-051",
       "name": "Spicity Fried Rice",
       "category": "Spices & Seasonings",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "spicity-fried-rice-100g.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Spicity Fried Rice 100g",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-052",
@@ -603,10 +634,16 @@
       "name": "Dried Pepper",
       "category": "Traditional Cooking Ingredients",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "dried-pepper.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Dried Pepper, loose product photo",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-056",
@@ -623,10 +660,16 @@
       "name": "Scent Leaf",
       "category": "Traditional Cooking Ingredients",
       "stock": "IN_STOCK",
-      "photo_status": "NEEDS_PRODUCT_PHOTO",
-      "photo_approved": false,
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "scent-leaf.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Scent Leaf, bag packaging",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
     },
     {
       "sku": "ORI-058",
