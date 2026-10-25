@@ -1,15 +1,16 @@
 {
   "company": "Oringo Distributions",
-  "purpose": "67 in-stock variants for internal website review, with six regulated items held separately; never publish a variant without an approved matching photograph and valid image rights.",
+  "purpose": "76 in-stock product variants for UK-first Oringo draft. Six regulated SKUs excluded. New client-supplied photo assets remain awaiting final owner rights/quality approval.",
   "confirmed_at": "2026-10-24",
   "stock_source": "Client confirmed all entries stocked in chat",
   "whatsapp_order_international": "+447534116006",
   "public_price_policy": "Negotiated via WhatsApp",
   "publication_rule": "Publish individual product only after exact package, image rights, visual quality, variant separation and owner approval. Image reference is not approval.",
   "statistics": {
-    "count": 67,
+    "count": 76,
     "photo_status_counts": {
-      "THIRD_PARTY_REFERENCE_ONLY": 39,
+      "THIRD_PARTY_REFERENCE_ONLY": 37,
+      "CLIENT_IMAGE_REVIEW": 11,
       "OWN_PHOTO_REVIEW": 7,
       "NEEDS_PRODUCT_PHOTO": 20,
       "ORINGO_SHELF_CROP_REQUIRES_CUTOUT": 1
@@ -18,7 +19,8 @@
     "deferred_regulated": 6,
     "split_variants_added": 2,
     "original_photo_review_assets": 7,
-    "milo_pack_photo_approved": 0
+    "milo_pack_photo_approved": 0,
+    "client_supplied_photo_reviews": 11
   },
   "products": [
     {
@@ -86,10 +88,13 @@
       "name": "Checkers Vanilla Custard — 2kg",
       "category": "Grains, Cereals & Food Staples",
       "stock": "IN_STOCK",
-      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/checkers-vanilla-2kg.jpg",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_review_note": "Supplied by client as stocked packaging; pack weight visible. Commercial image rights and final quality require owner verification."
     },
     {
       "sku": "ORI-008",
@@ -319,10 +324,13 @@
       "name": "Nestlé Milo Tin — 400g",
       "category": "Hot Drinks & Milk Powders",
       "stock": "IN_STOCK",
-      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
       "photo_approved": false,
       "publish_approved": false,
-      "variant_split_required": false
+      "variant_split_required": false,
+      "image_url": "images/products/milo-tin-400g.jpg",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_review_note": "Supplied by client as stocked packaging; pack weight visible. Commercial image rights and final quality require owner verification."
     },
     {
       "sku": "ORI-031",
@@ -715,9 +723,126 @@
       "photo_approved": false,
       "publish_approved": false,
       "variant_split_required": false
+    },
+    {
+      "sku": "ORI-074",
+      "name": "Ayoola Poundo Yam Flour — 900g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/ayoola-poundo-yam-900g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-075",
+      "name": "Nestlé Golden Morn — 300g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/golden-morn-300g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-076",
+      "name": "Nestlé Golden Morn — 450g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/golden-morn-450g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-077",
+      "name": "Nestlé Golden Morn — 600g + 50g Free (Promo Pack)",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/golden-morn-600g-plus-50g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-078",
+      "name": "Checkers Vanilla Custard — 400g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/checkers-vanilla-400g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-079",
+      "name": "Cadbury Bournvita Jar — 500g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/bournvita-jar-500g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-080",
+      "name": "Nestlé Milo Tin — 500g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/milo-tin-500g.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-081",
+      "name": "Nestlé Milo Tin — 1kg",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/milo-tin-1kg.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
+    },
+    {
+      "sku": "ORI-082",
+      "name": "Ayoola Poundo Yam Flour — 4.5kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "CLIENT_IMAGE_REVIEW",
+      "image_source": "CLIENT_SUPPLIED",
+      "image_url": "images/products/ayoola-poundo-yam-4-5kg.jpg",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "image_review_note": "Image supplied by client and product confirmed in stock. Verify licence/rights and current packaging; not publication approved."
     }
   ],
   "exclusion_policy": "Five adult alcoholic drinks and Robb Original Ointment excluded until licensing, age verification and relevant medicine clearance confirmed",
   "variant_note": "Milo 400g and 800g each split into Tin and Pouch per client product specification. These two newly added variants require individual visual verification.",
-  "image_policy": "Seven user-uploaded product photos now render only in non-public review branch with visible review designation. No stock photo has been marked owner approved or publish ready."
+  "image_policy": "Show client-supplied photos in review branch with under-review badge only; never claim full rights or approval without verification. Keep missing exact size/format photos as placeholders."
 }
