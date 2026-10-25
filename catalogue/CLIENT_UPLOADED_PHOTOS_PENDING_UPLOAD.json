@@ -1,0 +1,122 @@
+{
+  "company": "Oringo Distributions",
+  "origin": "User-uploaded shelf/product photos from this conversation; individual commercial use and packaging accuracy require owner approval",
+  "files_currently_in_repo": true,
+  "kit_name": "Oringo_Own_Original_Product_Photos_Review.zip",
+  "suggested_folder": "images/products/",
+  "workflow": "Seven original uploads now stored in images/products/ and rendered in the draft catalogue only with 'Original photo · Under review' badge; four additional mapped source photos remain to be verified. No photo is publication-approved.",
+  "records": [
+    {
+      "sku": "ORI-009",
+      "observed": "Golden Penny Semovita 1kg",
+      "upload_filename": "images/products/01_golden-penny-semovita-1kg.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "1kg visible, packaging cut off at bottom",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-040",
+      "observed": "Tom Tom Strong Menthol Candy",
+      "upload_filename": "images/products/02_tom-tom-strong-menthol-candy.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "Contains hand and neighbouring packs",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-042",
+      "observed": "Aboniki Balm 25g",
+      "upload_filename": "images/products/03_aboniki-balm-25g.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "25g visible; more than one jar shown",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-043",
+      "observed": "Ovaltine 1.2kg tin",
+      "upload_filename": "images/products/04_ovaltine.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "1.2kg shown; stacked tins; generic product listing currently lacks size",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-053",
+      "observed": "Okomu Banga Oil 2L",
+      "upload_filename": "images/products/05_banga-red-palm-oil.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "2L visible; bottom occluded by carton",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-058",
+      "observed": "Fanta Orange PET bottle",
+      "upload_filename": "images/products/06_fanta-orange.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "Regional cap and bottle size require checking",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-059",
+      "observed": "Coca-Cola Original PET bottle",
+      "upload_filename": "images/products/07_coca-cola-original.webp",
+      "status": "UPLOADED_FOR_DRAFT_REVIEW",
+      "notes": "Pack volume not verifiable from source crop",
+      "photo_approved": false,
+      "uploaded_to_review_branch": true,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-046",
+      "observed": "Funirem Ijebu Garri 1kg",
+      "upload_filename": "images/products/08_funirem-ijebu-garri.webp",
+      "status": "VERIFY_VARIANT",
+      "notes": "Existing generic Garri listing needs exact brand/size approval",
+      "photo_approved": false,
+      "uploaded_to_review_branch": false,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-016",
+      "observed": "Knorr Seasoning Cubes",
+      "upload_filename": "images/products/09_knorr-seasoning-cubes.webp",
+      "status": "VERIFY_VARIANT",
+      "notes": "Existing combined Knorr Original and Chicken SKU must split before launch",
+      "photo_approved": false,
+      "uploaded_to_review_branch": false,
+      "live_site_published": false
+    },
+    {
+      "sku": "ORI-072",
+      "observed": "Nestlé Milo Pouch (possible 400g)",
+      "upload_filename": "images/products/10_nestl-milo-pouch.webp",
+      "status": "SIZE_UNVERIFIED",
+      "notes": "Carton suggests 10x400g but the pouch label is not legible",
+      "photo_approved": false,
+      "uploaded_to_review_branch": false,
+      "live_site_published": false
+    },
+    {
+      "sku": "UNLISTED",
+      "observed": "Nestlé Milo Tin 1.8kg",
+      "upload_filename": "images/products/11_nestl-milo-tin-1-8kg.webp",
+      "status": "INCOMPATIBLE_SIZE",
+      "notes": "1.8kg photographed; must never appear on 400g or 800g tin SKU",
+      "photo_approved": false,
+      "uploaded_to_review_branch": false,
+      "live_site_published": false
+    }
+  ],
+  "uploaded_draft_images": 7,
+  "remaining_mapped_source_photos": 4
+}

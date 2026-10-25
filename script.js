@@ -100,101 +100,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
 
+    // This static website has no server-side email submission service.
+    // Open one prefilled email draft; the visitor must send it in their email app.
     const contactForm = document.getElementById('contactForm');
-
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton.textContent;
-            
-            // Change button text to "Sending..."
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-
-            // Basic validation
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields: Name, Email, and Message.');
-                submitButton.textContent = originalButtonText;
-                submitButton.disabled = false;
-                return;
-            }
-
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
-                submitButton.textContent = originalButtonText;
-                submitButton.disabled = false;
-                return;
-            }
-
-            // Format message body
-            const subject = 'Contact Form Inquiry - Oringo Distributions';
-            const body = `
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-
-Message:
-${message}
-
----
-Sent from Oringo Distributions Website
-            `.trim();
-
-            // Encode for URL
-            const encodedSubject = encodeURIComponent(subject);
-            const encodedBody = encodeURIComponent(body);
-            
-            // Create mailto link
-            const mailtoLink = `mailto:info@oringodistributions.uk?subject=${encodedSubject}&body=${encodedBody}`;
-            
-            // Try multiple approaches to ensure the email client opens
-            
-            // Approach 1: Direct window.location
-            setTimeout(() => {
-                window.location.href = mailtoLink;
-            }, 100);
-            
-            // Approach 2: Create and click a link (for better compatibility)
-            const tempLink = document.createElement('a');
-            tempLink.href = mailtoLink;
-            tempLink.style.display = 'none';
-            tempLink.target = '_self';
-            document.body.appendChild(tempLink);
-            
-            // Trigger click
-            setTimeout(() => {
-                tempLink.click();
-            }, 50);
-            
-            // Clean up
-            setTimeout(() => {
-                if (tempLink.parentNode) {
-                    document.body.removeChild(tempLink);
-                }
-            }, 1000);
-
-            // Show success message and reset form
-            setTimeout(() => {
-                // Reset form
-                contactForm.reset();
-                
-                // Reset button
-                submitButton.textContent = originalButtonText;
-                submitButton.disabled = false;
-                
-            }, 1500);
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            if (!contactForm.reportValidity()) return;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const subject = 'Oringo Distributions — website enquiry';
+            const body = [
+                'Name: ' + name,
+                'Email: ' + email,
+                'Phone: ' + phone,
+                '',
+                'Message:',
+                message
+            ].join('\n');
+            const draft = 'mailto:oringodistributions@gmail.com?subject=' +
+                encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            window.location.href = draft;
         });
     }
-
 
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {

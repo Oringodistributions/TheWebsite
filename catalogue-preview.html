@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Catalogue inventory review | Oringo Distributions</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:#173447;background:#f5f7fa}*{box-sizing:border-box}
+body{margin:0}header{background:#123a4c;color:white;padding:35px max(20px,calc((100% - 1180px)/2));}header p{color:#d5e5ea;max-width:780px}
+main{max-width:1220px;margin:auto;padding:20px}h1{font-size:clamp(26px,5vw,36px);margin:0}h2{font-size:20px}
+.notice{padding:15px;border:1px solid #aac5d1;background:#eef7fa;border-radius:12px;margin:20px 0}
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+input,select{padding:11px;border:1px solid #bdcbd1;border-radius:9px;background:#fff;font:inherit;min-width:200px}
+input{flex:1}.summary{color:#486171;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:15px}
+.card{background:white;border:1px solid #dbe4e9;border-radius:13px;overflow:hidden}
+.photo{aspect-ratio:1;display:grid;place-items:center;background:#eef1f3;color:#476173;text-align:center;padding:20px;font-size:14px}
+.content{padding:14px}.sku{font-size:12px;color:#758b96}.name{font-weight:750;margin:7px 0}.category{font-size:12px;color:#647b87}
+.stock{color:#176044;background:#e7f6eb;border-radius:999px;padding:4px 10px;display:inline-block;font-size:12px;font-weight:700}
+.pending{font-size:12px;color:#65501f;margin-top:10px}.warning{font-size:12px;color:#9a3412;margin-top:6px}
+footer{margin:30px 0;color:#516a78;font-size:13px}
+</style></head><body>
+<header><h1>Oringo Distributions</h1><p>Internal catalogue preview — all 76 active variants confirmed in stock. This is NOT a live store, and no image has been cleared for website publication.</p></header>
+<main><div class="notice"><b>Photo review is separate from stock confirmation.</b> Real product images must accurately show the exact pack and be licensed or supplied by Oringo before an item can go live. Composite cards require separation. WhatsApp ordering and negotiated prices will remain unchanged.</div>
+<div class="controls"><input id="q" placeholder="Search products and SKU" type="search" aria-label="Search products"><select id="category" aria-label="Category filter"><option value="all">All categories</option></select><select id="photos" aria-label="Photo filter"><option value="all">All photo states</option><option value="ORINGO_SHELF_CROP_REQUIRES_CUTOUT">Oringo shelf photo</option><option value="THIRD_PARTY_REFERENCE_ONLY">Outside reference</option><option value="NEEDS_PRODUCT_PHOTO">Photo missing</option></select></div>
+<div class="summary" id="summary" role="status">Loading catalogue…</div><div class="grid" id="grid"></div>
+<footer>Data source: catalogue/stock-confirmed-2026-10-24.json. Review branch only. No fixed prices, payments or live publication.</footer></main>
+<script>
+const photoMessages={ORINGO_SHELF_CROP_REQUIRES_CUTOUT:"Original Oringo shelf photo — precise cutout pending",THIRD_PARTY_REFERENCE_ONLY:"External reference — exact packaging and image rights pending",NEEDS_PRODUCT_PHOTO:"Product photo still needed"};
+const q=document.getElementById("q"),cat=document.getElementById("category"),photos=document.getElementById("photos"),grid=document.getElementById("grid"),summary=document.getElementById("summary");let products=[];
+function safe(s){return String(s??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]))}
+function render(){const needle=q.value.trim().toLowerCase(),arr=products.filter(p=>(cat.value==="all"||p.category===cat.value)&&(photos.value==="all"||p.photo_status===photos.value)&&((p.sku+" "+p.name).toLowerCase().includes(needle)));summary.textContent=arr.length+" / "+products.length+" inventory entries displayed";grid.innerHTML=arr.map(p=>'<article class="card"><div class="photo">Photo pending approval — no inaccurate or unlicensed image displayed</div><div class="content"><div class="sku">'+safe(p.sku)+'</div><div class="name">'+safe(p.name)+'</div><div class="category">'+safe(p.category)+'</div><div style="margin-top:10px"><span class="stock">In stock</span></div><div class="pending">'+safe(photoMessages[p.photo_status])+'</div>'+(p.variant_split_required?'<div class="warning">Separate bundled variants before publication</div>':'')+'</div></article>').join("")}
+fetch("catalogue/stock-confirmed-2026-10-24.json").then(r=>{if(!r.ok)throw new Error("Data unavailable");return r.json()}).then(data=>{products=data.products;for(const c of [...new Set(products.map(p=>p.category))].sort()){let o=document.createElement("option");o.value=c;o.textContent=c;cat.appendChild(o)};render()}).catch(()=>summary.textContent="Cannot load catalogue data. Preview through a hosted branch or a local web server, not a file:// URL.");
+[q,cat,photos].forEach(x=>x.addEventListener(x===q?"input":"change",render));
+</script></body></html>
