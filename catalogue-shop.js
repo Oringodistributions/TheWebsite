@@ -1,4 +1,4 @@
-/* Oringo catalogue: publish only owner-origin photos or separately approved images */
+/* Oringo catalogue: user-supplied photos; unlicensed third-party references remain hidden */
 (function () {
 "use strict";
 var NUMBER="447534116006",DATA="catalogue/stock-confirmed-2026-10-24.json";
@@ -45,14 +45,16 @@ function renderCards(){
   var article=document.createElement("article"),name=enc(clean(p.name)),sku=enc(p.sku);
   article.className="oc-product";
   article.dataset.sku=p.sku;
-  var ownerPhoto=p.image_source==="ORINGO_UPLOAD" && p.photo_status==="OWN_PHOTO_REVIEW";
+  // Display the 18 linked Oringo and client-provided photos on the public catalogue.
+  // Do not display third-party reference images without an appropriate licence.
+  var suppliedPhoto=(p.image_source==="ORINGO_UPLOAD"||p.image_source==="CLIENT_SUPPLIED");
   var approvedPhoto=p.photo_approved===true && p.photo_status==="APPROVED";
-  var showPhoto=(ownerPhoto||approvedPhoto) && p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url);
+  var showPhoto=(suppliedPhoto||approvedPhoto) && p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url);
   var photo=showPhoto?
-    '<div class="oc-original-photo"><img loading="lazy" alt="Photo of '+name+'" src="'+enc(p.image_url)+'">'+
+    '<div class="oc-original-photo"><img loading="lazy" alt="Photo of '+name+'" src="'+enc(p.image_url)+'" onerror="this.closest(\'.oc-original-photo\').classList.add(\'oc-image-load-error\')">'+
     '<button type="button" class="oc-zoom-trigger" data-zoom="'+sku+'" aria-label="Enlarge photograph of '+name+'"><i class="fas fa-expand" aria-hidden="true"></i></button>'+
-    (ownerPhoto?'<span class="oc-photo-review">Please confirm pack details</span>':"")+'</div>':
-    '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><span>'+enc(p.category)+'</span><small>Ask us for a product photo</small></div>';
+    '</div>':
+    '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><strong>'+name+'</strong><small>Photo not yet available · Ask Oringo for an image</small></div>';
   var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address."+ (p.variant_split_required?" Please confirm the pack/flavour option.":"");
   article.innerHTML='<div class="oc-product-image">'+photo+'</div><div class="oc-card-body">'+
     '<small class="oc-category">'+enc(p.category)+'</small><h3>'+name+'</h3>'+
