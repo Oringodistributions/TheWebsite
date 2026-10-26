@@ -1,0 +1,14 @@
+/* Shared FAQ presentation for all six public pages. Native details/summary works without JavaScript. */
+.oringo-site .oc-faq{background:#fff;color:#10251c;padding:60px 0}
+.oringo-site .oc-faq .section-title{text-align:left;font-size:30px;line-height:1.2;font-weight:750;letter-spacing:-1px;color:#0c3f24;margin:0}
+.oringo-site .oc-faq .section-title:after{display:none}
+.oringo-site .oc-faq-grid{display:grid;gap:0;max-width:none;margin:25px 0 0}
+.oringo-site .oc-faq-grid details{background:#fff;border:0;border-bottom:1px solid #dce2da;border-radius:0;padding:0}
+.oringo-site .oc-faq-grid summary{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;list-style:none;cursor:pointer;padding:19px 0;font-size:15px;font-weight:550;line-height:1.65;color:#204a33}
+.oringo-site .oc-faq-grid summary::-webkit-details-marker{display:none}
+.oringo-site .oc-faq-grid summary:after{content:"+";flex:0 0 20px;text-align:center;font-size:24px;line-height:1;font-weight:400;color:#167847}
+.oringo-site .oc-faq-grid details[open] summary:after{content:"−"}
+.oringo-site .oc-faq-grid details[open] summary{padding-bottom:12px}
+.oringo-site .oc-faq-grid details p{max-width:850px;padding:0 30px 20px 0;margin:0;color:#506958;font-size:14px;line-height:1.7}
+.oringo-site .oc-faq-grid summary:focus-visible{outline:3px solid #a56a12;outline-offset:4px}
+@media(max-width:700px){.oringo-site .oc-faq{padding:36px 0}.oringo-site .oc-faq .section-title{font-size:25px}.oringo-site .oc-faq-grid summary{font-size:14px;padding:17px 0}.oringo-site .oc-faq-grid details p{font-size:13px;line-height:1.7;padding-right:10px}}
