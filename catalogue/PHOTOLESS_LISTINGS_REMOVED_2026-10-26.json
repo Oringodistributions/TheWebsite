@@ -1,0 +1,634 @@
+{
+  "reason": "Removed from the public catalogue at owner request because an exact matching approved product image is unavailable. Restore only with a confirmed corresponding image.",
+  "removed_at": "2026-10-26",
+  "count": 58,
+  "products": [
+    {
+      "sku": "ORI-001",
+      "name": "Ayoola Cassava Fufu — 900g reference",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-002",
+      "name": "Ayoola Plantain Flour — 900g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-003",
+      "name": "Ayoola Poundo Yam — 1.8kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-004",
+      "name": "Checkers Banana Custard — 400g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-005",
+      "name": "Checkers Banana Custard — 1kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-006",
+      "name": "Checkers Banana Custard — 2kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-008",
+      "name": "Nestlé Golden Morn — 900g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-010",
+      "name": "Golden Penny Semovita — 2kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-011",
+      "name": "Honeywell Semolina — 900g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-012",
+      "name": "Honeywell Semolina — 1.8kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-013",
+      "name": "Lady B Custard Powder — 500g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-014",
+      "name": "Maggi Star Seasoning — package reference",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-015",
+      "name": "Maggi Crayfish Seasoning — carton reference",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-016",
+      "name": "Knorr Original and Chicken — paired product photo",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": true
+    },
+    {
+      "sku": "ORI-017",
+      "name": "Ducros Curry and Dried Thyme — paired product photo",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": true
+    },
+    {
+      "sku": "ORI-018",
+      "name": "Lion Curry and Thyme — paired product photo",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": true
+    },
+    {
+      "sku": "ORI-019",
+      "name": "La Casera Apple Drink — 350ml",
+      "category": "Non-Alcoholic Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-020",
+      "name": "Maltina Can and Bottles — product family photo",
+      "category": "Non-Alcoholic Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": true
+    },
+    {
+      "sku": "ORI-021",
+      "name": "Malta Guinness Can and Bottle — packaging photo",
+      "category": "Non-Alcoholic Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": true
+    },
+    {
+      "sku": "ORI-022",
+      "name": "Amstel Malta Can and Bottles — product family photo",
+      "category": "Non-Alcoholic Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": true
+    },
+    {
+      "sku": "ORI-023",
+      "name": "Schweppes Bitter Lemon — 300ml (flavour reference)",
+      "category": "Non-Alcoholic Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-024",
+      "name": "Tetmosol Soap — 75g",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-025",
+      "name": "Tura Germicidal Soap — pack reference",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-026",
+      "name": "Village Fresh Soap — 500g",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-027",
+      "name": "Cadbury Bournvita — 500g pouch",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-028",
+      "name": "Oxford Cabin Biscuits — 350g",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-029",
+      "name": "Dudu-Osun Black Soap — 150g",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-031",
+      "name": "Nestlé Milo Pouch — 800g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-072",
+      "name": "Nestlé Milo Pouch — 400g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "packaging_confirmed": false,
+      "source_note": "Listed by client as a separate Milo 400g pouch variant; manufacturer shows a 400g soft pack. Image reuse permission still needed."
+    },
+    {
+      "sku": "ORI-073",
+      "name": "Nestlé Milo Tin — 800g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "packaging_confirmed": false,
+      "source_note": "Client listed Milo 800g tin as separate stock. Obtain a front-facing photo of this exact tin before publication."
+    },
+    {
+      "sku": "ORI-032",
+      "name": "Peak Milk Powder Pouch — 400g",
+      "category": "Hot Drinks & Milk Powders",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-033",
+      "name": "Titus Sardines Red — 125g reference",
+      "category": "Traditional Cooking Ingredients",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-034",
+      "name": "Ayoola Yam Flour — 900g package reference",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-035",
+      "name": "Checkers Milk Custard 3-in-1 — 1.5kg",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-036",
+      "name": "Closeup Red Hot Triple Fresh Toothpaste — 130g",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-037",
+      "name": "MAGGI Chicken Flavour Seasoning — pack reference",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-038",
+      "name": "Oloyin Honey Beans — Olu Olu 600g example (brand unspecified)",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-039",
+      "name": "Black-Eyed Beans — unbranded 1kg example (size unspecified)",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-044",
+      "name": "Indomie Noodles",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "indomie-chicken-70g.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Indomie Chicken Flavour 70g",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-045",
+      "name": "Roasted Groundnut",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "roasted-groundnut.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Roasted Groundnut, bottle packaging",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-046",
+      "name": "Garri",
+      "category": "Grains, Cereals & Food Staples",
+      "stock": "IN_STOCK",
+      "photo_status": "ORINGO_SHELF_CROP_REQUIRES_CUTOUT",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-047",
+      "name": "Onga",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "onga-chicken-seasoning.jpg",
+        "onga-cubes.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Onga Chicken Seasoning and Onga Cube (two stocked packaging variants)",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-048",
+      "name": "Pepper Soup Spice",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-049",
+      "name": "Suya Mix",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-050",
+      "name": "Spicity Stew & Jollof",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "spicity-stew-jollof-10g.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Spicity Stew & Jollof 10g",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-051",
+      "name": "Spicity Fried Rice",
+      "category": "Spices & Seasonings",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "spicity-fried-rice-100g.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Spicity Fried Rice 100g",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-052",
+      "name": "Crayfish",
+      "category": "Traditional Cooking Ingredients",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-054",
+      "name": "Ehuru",
+      "category": "Traditional Cooking Ingredients",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-055",
+      "name": "Dried Pepper",
+      "category": "Traditional Cooking Ingredients",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "dried-pepper.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Dried Pepper, loose product photo",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-056",
+      "name": "Uziza Seed",
+      "category": "Traditional Cooking Ingredients",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-057",
+      "name": "Scent Leaf",
+      "category": "Traditional Cooking Ingredients",
+      "stock": "IN_STOCK",
+      "photo_status": "OWNER_APPROVED_ASSET_PENDING_UPLOAD",
+      "photo_approved": true,
+      "publish_approved": false,
+      "variant_split_required": false,
+      "photo_source": "ORINGO_UPLOAD",
+      "photo_asset_pending": [
+        "scent-leaf.jpg"
+      ],
+      "photo_stock_variant_confirmed": "Scent Leaf, bag packaging",
+      "photo_usage_rights": "Owner confirmed Oringo owns supplied photos and commercial website use is permitted on 2026-10-25"
+    },
+    {
+      "sku": "ORI-060",
+      "name": "Fayrouz",
+      "category": "Non-Alcoholic Beverages",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-061",
+      "name": "Damatol",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-062",
+      "name": "Soulmate Cream",
+      "category": "Personal Care & Toiletries",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-063",
+      "name": "Moi-Moi Cups",
+      "category": "Kitchenware & Utensils",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-064",
+      "name": "Food Cutters",
+      "category": "Kitchenware & Utensils",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-065",
+      "name": "Wooden Mortar",
+      "category": "Kitchenware & Utensils",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    },
+    {
+      "sku": "ORI-066",
+      "name": "Wooden Turner",
+      "category": "Kitchenware & Utensils",
+      "stock": "IN_STOCK",
+      "photo_status": "NEEDS_PRODUCT_PHOTO",
+      "photo_approved": false,
+      "publish_approved": false,
+      "variant_split_required": false
+    }
+  ]
+}

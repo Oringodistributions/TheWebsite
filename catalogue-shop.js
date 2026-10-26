@@ -20,12 +20,14 @@ function restoreEnquiry(){
   });
  }catch(error){}
 }
-var categoryIcons={
- "Hot Drinks & Milk Powders":"fa-mug-hot","Grains, Cereals & Food Staples":"fa-wheat-awn",
- "Spices & Seasonings":"fa-pepper-hot","Traditional Cooking Ingredients":"fa-seedling",
- "Non-Alcoholic Beverages":"fa-glass-water","Personal Care & Toiletries":"fa-pump-soap",
- "Kitchenware & Utensils":"fa-utensils","Candy":"fa-candy-cane"
-};
+function hasPhoto(p){
+ return !!(p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url) &&
+  (p.image_source==="ORINGO_UPLOAD"||p.image_source==="CLIENT_SUPPLIED"||(p.photo_approved===true&&p.photo_status==="APPROVED")));
+}
+function updateTotal(){
+ var total=state.products.length,stat=document.querySelector(".oc-hero-stat");
+ if(stat){stat.setAttribute("aria-label",total+" stocked catalogue entries");stat.querySelector("strong").textContent=String(total);}
+}
 var el=function(id){return document.getElementById(id)};
 var enc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
 var clean=function(s){return String(s)
@@ -45,22 +47,20 @@ function renderCards(){
   var article=document.createElement("article"),name=enc(clean(p.name)),sku=enc(p.sku);
   article.className="oc-product";
   article.dataset.sku=p.sku;
-  // Display the 18 linked Oringo and client-provided photos on the public catalogue.
-  // Do not display third-party reference images without an appropriate licence.
-  var suppliedPhoto=(p.image_source==="ORINGO_UPLOAD"||p.image_source==="CLIENT_SUPPLIED");
-  var approvedPhoto=p.photo_approved===true && p.photo_status==="APPROVED";
-  var showPhoto=(suppliedPhoto||approvedPhoto) && p.image_url && /^images\/products\/[a-z0-9-]+\.jpg$/i.test(p.image_url);
-  var photo=showPhoto?
-    '<div class="oc-original-photo"><img loading="lazy" alt="Photo of '+name+'" src="'+enc(p.image_url)+'" onerror="this.closest(\'.oc-original-photo\').classList.add(\'oc-image-load-error\')">'+
-    '<button type="button" class="oc-zoom-trigger" data-zoom="'+sku+'" aria-label="Enlarge photograph of '+name+'"><i class="fas fa-expand" aria-hidden="true"></i></button>'+
-    '</div>':
-    '<div class="oc-image-pending"><i class="fas '+(categoryIcons[p.category]||"fa-basket-shopping")+'" aria-hidden="true"></i><strong>'+name+'</strong><small>Photo not yet available · Ask Oringo for an image</small></div>';
+  var photo='<div class="oc-original-photo"><img loading="lazy" alt="Photo of '+name+'" src="'+enc(p.image_url)+'">'+
+    '<button type="button" class="oc-zoom-trigger" data-zoom="'+sku+'" aria-label="Enlarge photograph of '+name+'"><i class="fas fa-expand" aria-hidden="true"></i></button></div>';
   var msg="Hello Oringo Distributions. Please quote "+clean(p.name)+" ("+p.sku+") and delivery to my UK or European address."+ (p.variant_split_required?" Please confirm the pack/flavour option.":"");
   article.innerHTML='<div class="oc-product-image">'+photo+'</div><div class="oc-card-body">'+
     '<small class="oc-category">'+enc(p.category)+'</small><h3>'+name+'</h3>'+
     '<p class="oc-stock"><i class="fas fa-check-circle"></i> In stock</p><p class="oc-price">Price on request</p>'+(p.variant_split_required?'<p class="oc-variant-warning">Choose pack or flavour with our team</p>':"")+
     '<div class="oc-product-actions"><a class="oc-ask" target="_blank" rel="noopener noreferrer" href="'+wa(msg)+'"><i class="fab fa-whatsapp" aria-hidden="true"></i> Buy Now</a>'+
     '<button type="button" class="oc-add" data-action="add" data-sku="'+sku+'">Add to enquiry basket</button></div></div>';
+  article.querySelector("img").addEventListener("error",function(){
+   state.products=state.products.filter(function(item){return item.sku!==p.sku});
+   state.basket.delete(p.sku);saveEnquiry();
+   if(state.category!=="All"&&!state.products.some(function(item){return item.category===state.category}))state.category="All";
+   updateTotal();renderChips();renderCards();
+  },{once:true});
   frag.appendChild(article);
  });
  el("shop-products").replaceChildren(frag);
@@ -148,10 +148,11 @@ function init(){
   el("shop-enquiry-panel").focus({preventScroll:true});
  });
  fetch(DATA).then(function(r){if(!r.ok)throw new Error("Could not load catalogue");return r.json()}).then(function(d){
-  state.products=(d.products||[]).filter(function(p){return p.category!=="Adult Beverages"&&!/\bRobb\b/i.test(p.name)});
+  state.products=(d.products||[]).filter(function(p){return hasPhoto(p)&&p.category!=="Adult Beverages"&&!/\bRobb\b/i.test(p.name)});
+  updateTotal();
   restoreEnquiry();
   var hash=decodeURIComponent(location.hash.slice(1));
-  if(aliases[hash])state.category=aliases[hash];
+  if(aliases[hash]&&state.products.some(function(p){return p.category===aliases[hash]}))state.category=aliases[hash];
   var requested=new URLSearchParams(window.location.search).get("q");
   if(requested){state.search=requested.trim().toLowerCase().slice(0,90);el("shop-search").value=requested.slice(0,90);}
   renderChips();renderCards();
