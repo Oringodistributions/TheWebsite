@@ -1,0 +1,331 @@
+{
+  "checked_at": "2026-10-26",
+  "google_product_count": 44,
+  "already_represented": 33,
+  "added": 11,
+  "website_product_count": 59,
+  "note": "Generic GBP names are matched to the photographed format. Do not infer an unverified pack size or create duplicate tin listings for the Milo pouch. Original downloaded photo bytes are preserved.",
+  "additions": [
+    {
+      "sku": "ORI-113",
+      "website_name": "Nestlé Milo Pouch",
+      "category": "Hot Drinks & Milk Powders",
+      "google_product_name": "Nestlé Milo",
+      "google_image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaPTLImzDMypKwfTuCEI3oEbV0IEeK2HDZt--myCh5fgjE9d74",
+      "website_image_url": "images/products/nestle-milo-pouch.jpg",
+      "sha256": "976a2fb8d61de4cb7337712d93b3149862f8d249ef97c91f9147c3b9175b8597"
+    },
+    {
+      "sku": "ORI-114",
+      "website_name": "Knorr Seasoning Cubes",
+      "category": "Spices & Seasonings",
+      "google_product_name": "Knorr Seasoning Cubes",
+      "google_image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH47L8IPXWKIrBHeCMG9GzWrTyWnshmLMskXQP4N_oQpHUYj8k",
+      "website_image_url": "images/products/knorr-seasoning-cubes.jpg",
+      "sha256": "60806929f28e8f99717c30ce54388c4f57a8ba52ba1c9db607f5835127fbea7c"
+    },
+    {
+      "sku": "ORI-115",
+      "website_name": "Sonia Peppe & Onion Tomato Seasoning Mix",
+      "category": "Traditional Cooking Ingredients",
+      "google_product_name": "Sonia Peppe & Onion Tomato Seasoning Mix",
+      "google_image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNR_9836S3iaw65ItpkECr1IME71YuW401Ww-1iEnCSfWb6UYn",
+      "website_image_url": "images/products/sonia-peppe-onion-tomato-mix.jpg",
+      "sha256": "89128e214dd31b95ea1ce0da306a27c6d7a27d297faa44eb86040d2e4047b220"
+    },
+    {
+      "sku": "ORI-116",
+      "website_name": "Larsor Jollof Seasoning",
+      "category": "Spices & Seasonings",
+      "google_product_name": "Larsor Jollof Seasoning",
+      "google_image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ1CO950dX3eBNT9_i3kDB9FIi2G9ZbWVx_Cq8khw1QcKPW0o5",
+      "website_image_url": "images/products/larsor-jollof-seasoning.jpg",
+      "sha256": "8934e52d6174c5f0a031c87f2428d07c6e17b4ce4a040f09f4bed7e8696a0c40"
+    },
+    {
+      "sku": "ORI-117",
+      "website_name": "American Green Dark Soy Sauce — 150ml",
+      "category": "Traditional Cooking Ingredients",
+      "google_product_name": "American Green Dark Soy Sauce – 150 ml",
+      "google_image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj7LCub3_V8_cd2y2OhYJgkCmzxGlG5QDnHC4RoMVg39J4VR9j",
+      "website_image_url": "images/products/american-green-dark-soy-sauce-150ml.jpg",
+      "sha256": "a8f01f25d9889edc486457fb0dc10882e4f5d414559d1b24a675145d0c1ff78f"
+    },
+    {
+      "sku": "ORI-118",
+      "website_name": "Bama Real Mayonnaise with a Dash of Lemon — 850ml",
+      "category": "Traditional Cooking Ingredients",
+      "google_product_name": "Bama Real Mayonnaise with a Dash of Lemon – …",
+      "google_image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsT_oo1qas0O05VImiPGewZPSZqIeDf6ok0x7S2D5PaqOl3w2Y",
+      "website_image_url": "images/products/bama-mayonnaise-lemon-850ml.jpg",
+      "sha256": "08e7adf2f29529ec43dc3975a297aedc49f37f6d0ac4b55661c7ec92e5f63bf8"
+    },
+    {
+      "sku": "ORI-119",
+      "website_name": "Checkers Custard Powder — Banana Flavour",
+      "category": "Grains, Cereals & Food Staples",
+      "google_product_name": "Checkers Custard Powder – Banana Flavour",
+      "google_image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEB3qHz9H7Dp9qrnRh-hJN4hMatc0Oh58vBJiiWh2QpnPQGfWE",
+      "website_image_url": "images/products/checkers-banana-custard.jpg",
+      "sha256": "e83b10e07e3d336f0933e41bacdc01281c95d62dbf39ed1b1b5f2758073a54dd"
+    },
+    {
+      "sku": "ORI-120",
+      "website_name": "King’s Cooking Margarine",
+      "category": "Traditional Cooking Ingredients",
+      "google_product_name": "King's Cooking Margarine",
+      "google_image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoCdwTATVhOmeoeHCeMw4AkQ3crP7xOXKZBE9eySgjUc7IoSFk",
+      "website_image_url": "images/products/kings-cooking-margarine.jpg",
+      "sha256": "0d511155b88ccebd2d62d2984b6fc637d3d5ed81c0fd66a6e73b50669c0b77b0"
+    },
+    {
+      "sku": "ORI-121",
+      "website_name": "Geisha Mackerel in Tomato Sauce",
+      "category": "Canned Fish & Seafood",
+      "google_product_name": "Geisha Mackerel in Tomato Sauce",
+      "google_image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkOYcAD1CGQ7wYu0SAJyaQLyB1I5BGKfIA3WhgfrIE3NHyv2vc",
+      "website_image_url": "images/products/geisha-mackerel-tomato-sauce.jpg",
+      "sha256": "2dcaae9c40bd32472ebe1c9ef1b4568f3393e2ae9e906580a8d9ba9f0ba46c48"
+    },
+    {
+      "sku": "ORI-033",
+      "website_name": "Titus Sardines in Vegetable Oil — 125g",
+      "category": "Canned Fish & Seafood",
+      "google_product_name": "Titus Sardines in Vegetable Oil",
+      "google_image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTn8XiR1-Ifkhyygm7J9xCy9vOro80jPqteNgxnc7QHx6cXcan",
+      "website_image_url": "images/products/titus-sardines-vegetable-oil-125g.jpg",
+      "sha256": "ba44f246dc8922a0d71784a07c4a2a44595c4397512f10eb8c4df359b2f050f2"
+    },
+    {
+      "sku": "ORI-122",
+      "website_name": "Peak Full Cream Milk Powder Tin",
+      "category": "Hot Drinks & Milk Powders",
+      "google_product_name": "Peak Full Cream Milk Powder",
+      "google_image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQM62A5k3_psizqupksx9wckU8lxBhNEUgiSJtyz4Vwb5ospzbD",
+      "website_image_url": "images/products/peak-full-cream-milk-powder-tin.jpg",
+      "sha256": "ca5e22e7fc04e4edeb1a473271cda7cb9364167f4240fadc7401736ec5935df8"
+    }
+  ],
+  "coverage": [
+    {
+      "google_name": "PEL Turmeric Powder – 100 g",
+      "website_sku": "ORI-097",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Tartufi Jimmy Truffle Spice – Cheese",
+      "website_sku": "ORI-098",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Tartufi Jimmy Truffle Spice – Pesto",
+      "website_sku": "ORI-088",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Tartufi Jimmy Truffle Spice – Hot",
+      "website_sku": "ORI-109",
+      "action": "already_present"
+    },
+    {
+      "google_name": "PEL Garam Masala Powder – 100 g",
+      "website_sku": "ORI-102",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Ma Ling Coconut Milk",
+      "website_sku": "ORI-093",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Sunripe Giant Marrowfat Processed Peas",
+      "website_sku": "ORI-091",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Green Giant Niblets Original Sweetcorn",
+      "website_sku": "ORI-084",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Power Vegetable Oil",
+      "website_sku": "ORI-099",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Banga Red Palm Oil – 2 L",
+      "website_sku": "ORI-053",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Beta Malt",
+      "website_sku": "ORI-087",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Grand Malt",
+      "website_sku": "ORI-103",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Nestlé Milo",
+      "website_sku": "ORI-113",
+      "action": "added"
+    },
+    {
+      "google_name": "Viju Wheat Flavoured Milk Drink – 500 ml",
+      "website_sku": "ORI-112",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Checkers Instant Milk Custard 3-in-1 – 700 g",
+      "website_sku": "ORI-110",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Mealmate Poundo Yam Flour",
+      "website_sku": "ORI-107",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Knorr Seasoning Cubes",
+      "website_sku": "ORI-114",
+      "action": "added"
+    },
+    {
+      "google_name": "Sonia Peppe & Onion Tomato Seasoning Mix",
+      "website_sku": "ORI-115",
+      "action": "added"
+    },
+    {
+      "google_name": "Erisco Double Concentrated Tomato Pa…",
+      "website_sku": "ORI-105",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Sonia Tomato Mix",
+      "website_sku": "ORI-086",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Larsor Jollof Seasoning",
+      "website_sku": "ORI-116",
+      "action": "added"
+    },
+    {
+      "google_name": "Integrated Ingredients Mixed Spices",
+      "website_sku": "ORI-108",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Local Stoneless Rice",
+      "website_sku": "ORI-096",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Fresh Yam Tubers",
+      "website_sku": "ORI-083",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Tasty Cubes Chicken Flavour – 80 g",
+      "website_sku": "ORI-095",
+      "action": "already_present"
+    },
+    {
+      "google_name": "AACE Foods Jollof Rice Seasoning Powder – 10…",
+      "website_sku": "ORI-092",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Friel Thyme Whole Leaves – 50 g",
+      "website_sku": "ORI-100",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Dano Cool Cow Instant Filled Milk Powder",
+      "website_sku": "ORI-106",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Alfa Tomato Ketchup – 850 g",
+      "website_sku": "ORI-090",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Amoy’s Light Soy Sauce – 150 ml",
+      "website_sku": "ORI-101",
+      "action": "already_present"
+    },
+    {
+      "google_name": "American Green Dark Soy Sauce – 150 ml",
+      "website_sku": "ORI-117",
+      "action": "added"
+    },
+    {
+      "google_name": "Amoy’s Chilli Sauce",
+      "website_sku": "ORI-094",
+      "action": "already_present"
+    },
+    {
+      "google_name": "A. Legal Macédoine Mixed Vegetables",
+      "website_sku": "ORI-104",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Frolic Salad Cream – 250 g",
+      "website_sku": "ORI-111",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Sunripe Whole Sweetcorn",
+      "website_sku": "ORI-085",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Bama Real Mayonnaise with a Dash of Lemon – …",
+      "website_sku": "ORI-118",
+      "action": "added"
+    },
+    {
+      "google_name": "Jago Low Fat Mayonnaise",
+      "website_sku": "ORI-089",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Checkers Custard Powder – Banana Flavour",
+      "website_sku": "ORI-119",
+      "action": "added"
+    },
+    {
+      "google_name": "King's Cooking Margarine",
+      "website_sku": "ORI-120",
+      "action": "added"
+    },
+    {
+      "google_name": "Geisha Mackerel in Tomato Sauce",
+      "website_sku": "ORI-121",
+      "action": "added"
+    },
+    {
+      "google_name": "Ayoola Poundo Yam Flour",
+      "website_sku": "ORI-074",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Titus Sardines in Vegetable Oil",
+      "website_sku": "ORI-033",
+      "action": "added"
+    },
+    {
+      "google_name": "Ovaltine Malt Drink",
+      "website_sku": "ORI-043",
+      "action": "already_present"
+    },
+    {
+      "google_name": "Peak Full Cream Milk Powder",
+      "website_sku": "ORI-122",
+      "action": "added"
+    }
+  ]
+}

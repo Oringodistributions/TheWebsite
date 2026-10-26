@@ -2,8 +2,8 @@
 (function () {
 "use strict";
 var NUMBER="447534116006",DATA="catalogue/stock-confirmed-2026-10-24.json";
-var cats=["Hot Drinks & Milk Powders","Grains, Cereals & Food Staples","Spices & Seasonings","Traditional Cooking Ingredients","Non-Alcoholic Beverages","Personal Care & Toiletries","Kitchenware & Utensils","Candy"];
-var aliases={beverages:cats[0],grains:cats[1],spices:cats[2],oils:cats[3],dried:cats[3],bodycare:cats[5],drinks:cats[4],accessories:cats[6]};
+var cats=["Hot Drinks & Milk Powders","Grains, Cereals & Food Staples","Spices & Seasonings","Traditional Cooking Ingredients","Non-Alcoholic Beverages","Personal Care & Toiletries","Kitchenware & Utensils","Candy","Canned Fish & Seafood"];
+var aliases={beverages:cats[0],grains:cats[1],spices:cats[2],oils:cats[3],dried:cats[3],bodycare:cats[5],drinks:cats[4],accessories:cats[6],fish:cats[8]};
 var state={products:[],search:"",category:"All",sort:"name",basket:new Map(),buyer:"Retail"};
 var STORE_KEY="oringo-draft-enquiry-v1";
 function saveEnquiry(){

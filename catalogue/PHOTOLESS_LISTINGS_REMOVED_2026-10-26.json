@@ -1,7 +1,7 @@
 {
   "reason": "Removed from the public catalogue at owner request because an exact matching approved product image is unavailable. Restore only with a confirmed corresponding image.",
   "removed_at": "2026-10-26",
-  "count": 58,
+  "count": 57,
   "products": [
     {
       "sku": "ORI-001",
@@ -318,16 +318,6 @@
       "variant_split_required": false
     },
     {
-      "sku": "ORI-033",
-      "name": "Titus Sardines Red — 125g reference",
-      "category": "Traditional Cooking Ingredients",
-      "stock": "IN_STOCK",
-      "photo_status": "THIRD_PARTY_REFERENCE_ONLY",
-      "photo_approved": false,
-      "publish_approved": false,
-      "variant_split_required": false
-    },
-    {
       "sku": "ORI-034",
       "name": "Ayoola Yam Flour — 900g package reference",
       "category": "Grains, Cereals & Food Staples",
@@ -629,6 +619,13 @@
       "photo_approved": false,
       "publish_approved": false,
       "variant_split_required": false
+    }
+  ],
+  "restored_with_matching_photo": [
+    {
+      "sku": "ORI-033",
+      "restored_at": "2026-10-26",
+      "source": "Google Business Profile original Titus product photo"
     }
   ]
 }
