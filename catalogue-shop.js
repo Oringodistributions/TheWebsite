@@ -131,7 +131,7 @@ function init(){
     var dialog=el("shop-photo-dialog");
     el("shop-photo-zoomed").src=p.image_url;
     el("shop-photo-zoomed").alt="Enlarged client product image: "+clean(p.name);
-    el("shop-photo-caption").textContent=clean(p.name)+" — supplied photo under review";
+    el("shop-photo-caption").textContent=clean(p.name)+"";
     if(typeof dialog.showModal==="function")dialog.showModal();
     else dialog.setAttribute("open","");
    }
