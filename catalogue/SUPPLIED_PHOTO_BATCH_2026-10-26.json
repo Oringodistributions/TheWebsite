@@ -1,0 +1,249 @@
+{
+  "records": [
+    {
+      "sku": "ORI-083",
+      "product": "Fresh Yam Tubers",
+      "source_file": "1fa06502-e61d-4faa-bdaa-997e2e813113.jpeg",
+      "image_url": "images/products/fresh-yam-tubers.jpg",
+      "sha256": "36621fb0a059b0eff37a01faf044007028cdf7ef7d65e800999e40825c5ac55b",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-084",
+      "product": "Green Giant Niblets Original Sweetcorn",
+      "source_file": "352937e9-df08-47e5-bbf1-8aaaa3714b1a.jpeg",
+      "image_url": "images/products/green-giant-sweetcorn.jpg",
+      "sha256": "cd63de79c11ddc870a9ee008722c8699ad3ced85fda90c03fccdb283f19b165f",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-085",
+      "product": "Sunripe Whole Sweetcorn",
+      "source_file": "396f8a75-363e-454b-9a12-50e1e4e5e738.jpeg",
+      "image_url": "images/products/sunripe-whole-sweetcorn.jpg",
+      "sha256": "cec1e30d69479cf85b098430350e157bc020589af14096c4b48e802663da2e35",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-086",
+      "product": "Sonia Tomato Mix",
+      "source_file": "3a842fc5-4462-43f2-8ff8-d002739cc67d(1).jpeg",
+      "image_url": "images/products/sonia-tomato-mix.jpg",
+      "sha256": "b4c2fc548253325cf1869f0385dd17d7509e0f3784376f26dd3c1a18ee2a18e8",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-087",
+      "product": "Beta Malt",
+      "source_file": "3da4140c-a77c-4152-8a55-7a357e01dfbe(1).jpeg",
+      "image_url": "images/products/beta-malt.jpg",
+      "sha256": "b54d8843adbe935bf097566d1493d0560cb8cf9f64e5ccf8b2c67c344f1e5228",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-088",
+      "product": "Tartufi Jimmy Truffle Spice — Pesto",
+      "source_file": "3dd36e9c-a67d-46e1-970d-9140acb3f096.jpeg",
+      "image_url": "images/products/tartufi-jimmy-truffle-pesto.jpg",
+      "sha256": "63feea1ea104b85dda53ae8fa72f830cf360c0052df92c28c1d4f97b9a6985e8",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-089",
+      "product": "Jago Low Fat Mayonnaise",
+      "source_file": "3e2098c9-43be-4c39-a19b-a16dfb490777.jpeg",
+      "image_url": "images/products/jago-low-fat-mayonnaise.jpg",
+      "sha256": "879b447d8fd6ccbca5ef4743d83d070cbbb4b402f0fe0b6788637f50244e71f2",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-090",
+      "product": "Alfa Tomato Ketchup — 850g",
+      "source_file": "41a1b2e7-a82d-4504-ba61-bc6700d36e1d.jpeg",
+      "image_url": "images/products/alfa-tomato-ketchup-850g.jpg",
+      "sha256": "38c880728852e57a046d2037dc207dfdc0ecf8e41471761c05633e575a4eecbe",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-091",
+      "product": "Sunripe Giant Marrowfat Processed Peas",
+      "source_file": "4b984c57-ed7e-438b-a5c0-c71613efcf39.jpeg",
+      "image_url": "images/products/sunripe-marrowfat-peas.jpg",
+      "sha256": "79112ef4b68a34fd2ce763b47a7c25e1ef4c868254c374bd73e59a8ae2ed735c",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-092",
+      "product": "AACE Foods Jollof Rice Seasoning Powder — 100g",
+      "source_file": "5b64700c-8d89-403c-a524-e76d788f957d(1).jpeg",
+      "image_url": "images/products/aace-jollof-seasoning-100g.jpg",
+      "sha256": "f20ed8e0e452277126f125b2cd77e579da1c8273bb8a3c0c557e1ba18f7ae771",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-093",
+      "product": "Ma Ling Coconut Milk",
+      "source_file": "60ead5af-3e4d-4c76-ba88-4779ab6081ba.jpeg",
+      "image_url": "images/products/ma-ling-coconut-milk.jpg",
+      "sha256": "2dcb9ba0c991faeaf14de09c251db8aef7711119e61eec8cb1011aef42c1187a",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-094",
+      "product": "Amoy’s Chilli Sauce",
+      "source_file": "6704174e-83b2-4d7c-85cb-20491ab2fd25.jpeg",
+      "image_url": "images/products/amoys-chilli-sauce.jpg",
+      "sha256": "a483e163489fe60dae8a0187e3150f550236e5a32770635630f348a1c2e5af89",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-095",
+      "product": "Tasty Cubes Chicken Flavour — 80g",
+      "source_file": "74706975-078a-48e6-a814-b5129072d3d9(1).jpeg",
+      "image_url": "images/products/tasty-cubes-chicken-80g.jpg",
+      "sha256": "7f44e29eaacdef320f65d1312098ddf65348a292e13270fd08b1635ba8785301",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-096",
+      "product": "Local Stoneless Rice",
+      "source_file": "78ca251c-b2f4-4a23-bb73-78fb0ea757e7.jpeg",
+      "image_url": "images/products/local-stoneless-rice.jpg",
+      "sha256": "f59aa936650483691d8211ce76bdb36048ad785a072db63febc43d0d2bb0078a",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-097",
+      "product": "PEL Turmeric Powder — 100g",
+      "source_file": "7ab8be23-1f5a-42c0-967b-9f5ae43238d4.jpeg",
+      "image_url": "images/products/pel-turmeric-100g.jpg",
+      "sha256": "6ef1e117c2e679ae86231cf0281b3ff6874f87ec25dec7c8104099260a01d835",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-098",
+      "product": "Tartufi Jimmy Truffle Spice — Cheese",
+      "source_file": "8f076353-446f-479f-ba0b-71bd93f956f4.jpeg",
+      "image_url": "images/products/tartufi-jimmy-truffle-cheese.jpg",
+      "sha256": "1f849ff32db3433474233d65a6e887d698c9982c46d5a991114169a0fd0e349f",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-099",
+      "product": "Power Vegetable Oil",
+      "source_file": "8f45c899-3168-4dd4-9eb3-c1ca691bb187(1).jpeg",
+      "image_url": "images/products/power-vegetable-oil.jpg",
+      "sha256": "14712211c39093400bc24deef28a1040d00e8a87229de20c1a313f450ccbdc4a",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-100",
+      "product": "Friel Thyme Whole Leaves — 50g",
+      "source_file": "90e09d0b-b29a-431c-acc5-13a5cc7d3964(1).jpeg",
+      "image_url": "images/products/friel-thyme-50g.jpg",
+      "sha256": "2dbecb9e26d0b6b85ab0f13ab72f7e09b50e5653bf80a39603450c286855c572",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-101",
+      "product": "Amoy’s Light Soy Sauce — 150ml",
+      "source_file": "99eeb23a-7b37-40dc-a97d-d74b8fe24c2b.jpeg",
+      "image_url": "images/products/amoys-light-soy-sauce-150ml.jpg",
+      "sha256": "6f3dac0287301e26e1df4d7fe80e7ede617883dc010f80346eccfa8032efa8a3",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-102",
+      "product": "PEL Garam Masala Powder — 100g",
+      "source_file": "a751bb8c-0c65-4336-885f-35de4b04d224.jpeg",
+      "image_url": "images/products/pel-garam-masala-100g.jpg",
+      "sha256": "95fd37b592bb5db2b3974256975df405a2974021dd953db2b8a3c584c2390ab2",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-103",
+      "product": "Grand Malt",
+      "source_file": "b2dd5a2b-64f0-427f-a3ef-27652e88b1b4(1).jpeg",
+      "image_url": "images/products/grand-malt.jpg",
+      "sha256": "231eb0ff53e3301965ce546863b0593718c9a033a7af4538a0a822fb06bae5d5",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-104",
+      "product": "A. Legal Macédoine Mixed Vegetables",
+      "source_file": "b83593dd-6b77-4584-b9be-d1daaa4ebba2.jpeg",
+      "image_url": "images/products/a-legal-macedoine-vegetables.jpg",
+      "sha256": "73cc14f91b17c9ce6fb38c668a1907db72bea4422dac8dcc9374d2aa572c2802",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-105",
+      "product": "Erisco Double Concentrated Tomato Paste",
+      "source_file": "bb0f2330-cd25-493b-8ef6-c5cc1716dcd6(1).jpeg",
+      "image_url": "images/products/erisco-tomato-paste.jpg",
+      "sha256": "6990df553d323bc4bc4dd69dbe2d1ade64c1bab4c4a074f96df618005d82113e",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-106",
+      "product": "Dano Cool Cow Instant Filled Milk Powder",
+      "source_file": "c5f64bc6-a522-4e3d-8568-0f62f7526ba2(1).jpeg",
+      "image_url": "images/products/dano-cool-cow-milk.jpg",
+      "sha256": "7e8f17eb39bd01c0fda316a5d0152a755dbb9b565d2ad3759920eecab06830f5",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-107",
+      "product": "Mealmate Poundo Yam Flour",
+      "source_file": "cf8e68bf-dbd0-49e1-a407-dd58d46a8115(1).jpeg",
+      "image_url": "images/products/mealmate-poundo-yam.jpg",
+      "sha256": "e891a09d9a72189458639bd408f489b8593b3af10e87b2fc77a400cb0b57eebb",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-108",
+      "product": "Integrated Ingredients Mixed Spices",
+      "source_file": "d4217584-8fea-4349-b9f2-1fcf493c6d91(1).jpeg",
+      "image_url": "images/products/integrated-ingredients-mixed-spices.jpg",
+      "sha256": "719514ac9a59e70642917c0a460ae1817f72d30f42e6062255e56c799886d9a5",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-109",
+      "product": "Tartufi Jimmy Truffle Spice — Hot",
+      "source_file": "e3cc9b71-1a1e-44c2-bca6-6e5220b6720d.jpeg",
+      "image_url": "images/products/tartufi-jimmy-truffle-hot.jpg",
+      "sha256": "8320722589bfb560d3aa4ec586c662d630827230b76d49d0cfb505cc8bc2df8d",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-110",
+      "product": "Checkers Instant Milk Custard 3-in-1 — 700g",
+      "source_file": "e7eb34a8-e0eb-4ac9-b3fe-5360b746fe32(1).jpeg",
+      "image_url": "images/products/checkers-milk-custard-700g.jpg",
+      "sha256": "0dc5ec7883efaf507570fff25e9f7bf0553ff7951b0d4d32ae85abf3d7fad176",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-111",
+      "product": "Frolic Salad Cream — 250g",
+      "source_file": "e9501a3f-7a78-469d-a283-d13acce987fa.jpeg",
+      "image_url": "images/products/frolic-salad-cream-250g.jpg",
+      "sha256": "b237e38ab0720a94d3b14fb3dec5a75f7ad9c2c002446422df20d2f5129d884a",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    },
+    {
+      "sku": "ORI-112",
+      "product": "Viju Wheat Flavoured Milk Drink — 500ml",
+      "source_file": "f42c738c-2c16-4e5a-a0ac-92572d53a8aa(1).jpeg",
+      "image_url": "images/products/viju-wheat-milk-500ml.jpg",
+      "sha256": "45ff652f62c29d00317fe1e184630206f9d74f33bc6b921848ea5ddad458da36",
+      "notes": "Original user-supplied image, byte-for-byte unchanged; visible weights included only when readable. Publication approved by owner on 26 October 2026."
+    }
+  ],
+  "photos_added": 30,
+  "originals_preserved": true,
+  "pending_publication_approval": false,
+  "publication_approved_at": "2026-10-26",
+  "approval_source": "Owner explicitly approved publishing website update #4 in this conversation."
+}
