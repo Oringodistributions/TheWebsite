@@ -1172,3 +1172,11 @@ footer {
 .oc-featured-card span{margin-top:.45rem;font-size:.8rem;color:#087d44;font-weight:650}
 @media(max-width:850px){.oc-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.oc-featured-card img{height:170px}}
 @media(max-width:420px){.oc-featured-grid{gap:.7rem}.oc-featured-card{padding:.7rem}.oc-featured-card img{height:145px}.oc-featured-card strong{font-size:.82rem}}
+
+/* Visit information and keyboard-accessible navigation. */
+.hamburger{border:0;background:transparent;padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.hamburger:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #167b48;outline-offset:4px}
+.contact-detail address{font-style:normal}.contact-detail p{overflow-wrap:anywhere}
+.map-placeholder{height:auto;min-height:300px;text-align:center;padding:2rem 1rem}
+.map-placeholder h2{font-size:1.6rem}.map-placeholder p{font-size:1rem}
+.about-image img{object-fit:contain;background:#fff}

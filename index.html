@@ -13,23 +13,45 @@
     <meta property="og:description" content="Find Nigerian groceries and request a personalised WhatsApp quote from Oringo Distributions, based near Birmingham.">
     <meta property="og:url" content="https://oringodistributions.co.uk/">
     <script type="application/ld+json">
-    {
+{
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "GroceryStore",
       "name": "Oringo Distributions",
       "url": "https://oringodistributions.co.uk/",
       "logo": "https://oringodistributions.co.uk/logo.png",
       "email": "oringodistributions@gmail.com",
       "telephone": "+44 7534 116006",
       "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Fast Safe Storage, Cornwall Road",
-        "addressLocality": "Smethwick",
-        "postalCode": "B66 2JR",
-        "addressCountry": "GB"
+            "@type": "PostalAddress",
+            "streetAddress": "Fast Safe Storage, Cornwall Road",
+            "addressLocality": "Smethwick",
+            "postalCode": "B66 2JR",
+            "addressCountry": "GB"
       },
-      "description": "UK-based Nigerian groceries and drinks supplier serving retail and wholesale customers, with orders from customers across the UK and Europe, with shipping confirmed before purchase."
-    }
+      "description": "Nigerian and African groceries for retail and wholesale customers. Visit and shop at our Smethwick warehouse with free parking, collect your order, or arrange local delivery and UK/EU courier delivery.",
+      "openingHoursSpecification": [
+            {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                  ],
+                  "opens": "00:00",
+                  "closes": "23:59"
+            }
+      ],
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Contactless Payment, Bank Transfer",
+      "hasMap": "https://www.google.com/maps/place/Oringo+Distributions/data=!4m2!3m1!1s0x0:0x9c57d665e00a6a46",
+      "sameAs": [
+            "https://facebook.com/oringodistribution",
+            "https://instagram.com/oringodistributions",
+            "https://twitter.com/oringonaijafood"
+      ]
+}
     </script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="catalogue-shop.css">
@@ -50,11 +72,11 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button type="button" class="hamburger" id="hamburger" aria-label="Open navigation" aria-controls="navMenu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -231,9 +253,10 @@
     </section>
     <section class="oc-delivery" aria-labelledby="oc-delivery-title">
       <div class="container">
-        <h2 class="section-title" id="oc-delivery-title">Nigerian Food Delivery Across the UK &amp; Europe</h2>
-        <p>Oringo Distributions operates from the Birmingham area and handles individual and wholesale enquiries. We welcome orders from customers throughout the UK and Europe. Tell us your delivery country and chosen products so we can check destination-specific restrictions, delivery availability and charges before confirming your order. We will confirm whether delivery is possible and provide one final quoted price including applicable shipping charges, customs duties and import taxes, together with the estimated timeframe, before you commit to an order.</p>
-        <p>We operate from a warehouse rather than a walk-in shop. Please arrange any collection directly with our team rather than visiting without an appointment.</p>
+        <h2 class="section-title" id="oc-delivery-title">Visit Our Smethwick Warehouse or Arrange Delivery</h2>
+        <p>Oringo Distributions welcomes individual shoppers and wholesale buyers at our Smethwick warehouse. We offer nearby local delivery and courier delivery throughout the UK and EU. Tell us your delivery country and chosen products so we can check destination-specific restrictions, delivery availability and charges before confirming your order. We will confirm whether delivery is possible and provide one final quoted price including applicable shipping charges, customs duties and import taxes, together with the estimated timeframe, before you commit to an order.</p>
+        <p>Visit and shop at our Smethwick warehouse or collect your order. We are open 24 hours Monday–Saturday and closed on Sundays. Free parking is available.</p>
+        <a class="oc-secondary" href="contact.html">Opening hours, parking &amp; directions</a>
         <a class="oc-primary" href="https://wa.me/447534116006?text=Hello%20Oringo%2C%20please%20confirm%20delivery%20availability%20and%20cost%20for%20my%20location." target="_blank" rel="noopener noreferrer">Ask About Delivery on WhatsApp</a>
       </div>
     </section>
@@ -245,6 +268,8 @@
           <details><summary>How does Buy Now work?</summary><p>Buy Now opens a WhatsApp message for the selected product. You can confirm its pack size, quantity, pricing and delivery before agreeing to an order. There is no card checkout on this website.</p></details>
           <details><summary>Can you deliver Nigerian groceries across the UK?</summary><p>We take UK delivery enquiries and confirm service availability, delivery charges and estimated times for the products and destination you provide.</p></details>
           <details><summary>Do you deliver to countries in Europe?</summary><p>Yes. We accept order enquiries from customers across Europe. Tell us your country and products so we can check import and food restrictions, shipping availability and delivery timing. Applicable customs duties, import taxes and shipping costs are included in your final WhatsApp quotation before you confirm an order.</p></details>
+          <details><summary>Can I visit and shop in person?</summary><p>Yes. Visit Oringo Distributions at Fast Safe Storage, Cornwall Road, Smethwick, B66 2JR. We are open 24 hours Monday–Saturday and closed Sundays, with free parking. You can also collect your order.</p></details>
+          <details><summary>Which payment methods do you accept?</summary><p>We accept cash, debit and credit cards, contactless payments and bank transfers. For WhatsApp orders, confirm your payment arrangements with our team. This website does not take card payments.</p></details>
           <details><summary>Can I request wholesale quantities?</summary><p>Yes. Oringo accepts retail and wholesale enquiries. Send the products, pack sizes and quantities you need through WhatsApp for a quotation.</p></details>
           <details><summary>Why aren't prices shown online?</summary><p>Oringo confirms product prices through WhatsApp enquiries. Shipping charges and exact order totals are discussed before you decide to buy.</p></details>
           <details><summary>Can I request an item not in the catalogue?</summary><p>Yes. Send Oringo a WhatsApp message with the product details. We can check whether it is available, but items not listed are not represented as in stock.</p></details>
@@ -303,7 +328,7 @@
         </div>
     </footer>
 
-    <button class="scroll-to-top" id="scrollToTop">
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
