@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
     const scrollToTop = document.getElementById('scrollToTop');
 
-    if (hamburger) {
+    if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
             const expanded = navMenu.classList.toggle('active');
             hamburger.setAttribute('aria-expanded', String(expanded));
@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.remove('active');
             if (hamburger) { hamburger.setAttribute('aria-expanded', 'false'); hamburger.setAttribute('aria-label', 'Open navigation'); }
         });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if(event.key === 'Escape' && navMenu && hamburger){navMenu.classList.remove('active');hamburger.setAttribute('aria-expanded','false');hamburger.setAttribute('aria-label','Open navigation');}
     });
 
     window.addEventListener('scroll', () => {
@@ -41,27 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.category-card, .feature-card, .product-card, .about-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
 
     // Handle anchor links with smooth scroll offset for fixed navbar
     document.querySelectorAll('a[href^="products.html#"]').forEach(link => {
