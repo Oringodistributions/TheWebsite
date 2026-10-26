@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /catalogue-preview.html
-Sitemap: https://oringodistributions.co.uk/sitemap.xml
+Sitemap: https://www.oringodistributions.co.uk/sitemap.xml
