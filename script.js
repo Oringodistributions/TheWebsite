@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Message:',
                 message
             ].join('\n');
-            const draft = 'mailto:oringodistributions@gmail.com?subject=' +
+            const draft = 'mailto:oringowholesale@gmail.com?subject=' +
                 encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
             window.location.href = draft;
         });
